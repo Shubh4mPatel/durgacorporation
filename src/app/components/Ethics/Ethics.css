@@ -1,0 +1,80 @@
+.ethics-container {
+    /* position: relative; */
+    text-align: start;
+    max-width: 1500px;
+    /* background: url('/images/ethics&value_bg.jpg'); */
+    padding: 0px 40px;
+    min-height: 300px;
+    /* overflow: hidden; */
+  }
+  .ethics-section {
+    width: 100%;
+    /* min-height: 300px; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/images/ethics&value_bg.jpg');
+
+  }
+  
+  
+  .ethic-content {
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .ethic-title {
+    text-align: start;
+    font-family: 'Times New Roman', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    margin: 0 0 40px 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ethic-description {
+    font-family: 'Times New Roman', serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(0, 0, 0, 1);
+    margin: 0 0 20px 0;
+    text-align: justify;
+    max-width: 100%;
+    text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.05);
+  }
+  
+  .ethic-description:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .ethics-container {
+      padding: 40px 20px;
+    }
+    
+    .ethic-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    
+    .ethic-description {
+      font-size: 0.95rem;
+      text-align: left;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ethics-container {
+      padding: 30px 15px;
+    }
+    
+    .ethic-title {
+      font-size: 1.75rem;
+      margin-bottom: 25px;
+    }
+  }

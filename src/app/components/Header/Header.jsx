@@ -30,7 +30,7 @@ const Header = () => {
         
         <nav className="nav-right">
           <a href="/products" className={`nav-link ${pathname === '/products' ? 'active' : ''}`}>Products</a>
-          <a href="/contact" className={`nav-link ${pathname === '/contact' ? 'active' : ''}`}>Contact Us</a>
+          <a href="/contact-us" className={`nav-link ${pathname === '/contact-us' ? 'active' : ''}`}>Contact Us</a>
         </nav>
 
         {/* Mobile Toggle */}
@@ -47,9 +47,9 @@ const Header = () => {
         {/* Mobile Nav */}
         <nav className={`mobile-nav ${mobileMenuOpen ? 'active' : ''}`}>
           <a href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>Home</a>
-          <a href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>About Us</a>
+          <a href="/about-us" className={`nav-link ${pathname === '/about' ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>About Us</a>
           <a href="/products" className={`nav-link ${pathname === '/products' ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>Products</a>
-          <a href="/contact" className={`nav-link ${pathname === '/contact' ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>Contact Us</a>
+          <a href="/contact-us" className={`nav-link ${pathname === '/contact' ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>Contact Us</a>
         </nav>
       </div>
     </header>
