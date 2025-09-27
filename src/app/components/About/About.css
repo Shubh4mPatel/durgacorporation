@@ -1,0 +1,16 @@
+.About-para{
+    font-size: 1.2rem;
+    padding-right:25px;
+    padding-left:25px;
+    padding-top: 100px ;
+    line-height: 28px;
+    font-size: 16px;
+    width: 100%;
+    color: #333;
+    /* margin-bottom: 1rem; */
+    text-align: justify;
+    max-width: 450px;
+    height:750px;
+    background: url('/images/about_bg.png') no-repeat center center;
+    background-size: 600px 750px;
+}
