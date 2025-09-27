@@ -1,10 +1,12 @@
 'use client';
 import React, { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import './Header.css';
 import logo from '../images/dc_logo.svg';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname(); // ✅ Get current route
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -14,8 +16,8 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <nav className="nav-left">
-          <a href="#" className="nav-link">Home</a>
-          <a href="#" className="nav-link">About Us</a>
+          <a href="/home" className={`nav-link ${pathname === '/home' ? 'active' : ''}`}>Home</a>
+          <a href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`}>About Us</a>
         </nav>
         
         <div className="logo-container">
@@ -27,11 +29,11 @@ const Header = () => {
         </div>
         
         <nav className="nav-right">
-          <a href="#" className="nav-link">Products</a>
-          <a href="#" className="nav-link">Contact Us</a>
+          <a href="/products" className={`nav-link ${pathname === '/products' ? 'active' : ''}`}>Products</a>
+          <a href="/contact" className={`nav-link ${pathname === '/contact' ? 'active' : ''}`}>Contact Us</a>
         </nav>
 
-        {/* Mobile Toggle Button */}
+        {/* Mobile Toggle */}
         <button 
           className={`mobile-toggle ${mobileMenuOpen ? 'active' : ''}`}
           onClick={toggleMobileMenu}
@@ -42,12 +44,12 @@ const Header = () => {
           <span></span>
         </button>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Nav */}
         <nav className={`mobile-nav ${mobileMenuOpen ? 'active' : ''}`}>
-          <a href="#" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Home</a>
-          <a href="#" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About Us</a>
-          <a href="#" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Products</a>
-          <a href="#" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact Us</a>
+          <a href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>Home</a>
+          <a href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>About Us</a>
+          <a href="/products" className={`nav-link ${pathname === '/products' ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>Products</a>
+          <a href="/contact" className={`nav-link ${pathname === '/contact' ? 'active' : ''}`} onClick={() => setMobileMenuOpen(false)}>Contact Us</a>
         </nav>
       </div>
     </header>
