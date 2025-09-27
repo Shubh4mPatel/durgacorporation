@@ -1,11 +1,13 @@
 /* Base styles */
 .About-section {
+    background-image: url('/images/about_us_bg.jpg');
     padding: 2rem 1rem;
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
   }
   
   .About-content {
+    max-width: 1650px;
     display: flex;
     align-items: center;
     gap: 2rem;
