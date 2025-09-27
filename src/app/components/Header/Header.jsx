@@ -17,7 +17,7 @@ const Header = () => {
       <div className="header-container">
         <nav className="nav-left">
           <a href="/home" className={`nav-link ${pathname === '/home' ? 'active' : ''}`}>Home</a>
-          <a href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`}>About Us</a>
+          <a href="/about-us" className={`nav-link ${pathname === '/about-us' ? 'active' : ''}`}>About Us</a>
         </nav>
         
         <div className="logo-container">
