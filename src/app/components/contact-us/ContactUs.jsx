@@ -59,28 +59,30 @@ const ContactUs = () => {
             <div className="contact-form-container">
               <div className="contact-form">
                 <div className="form-group">
-                  <label className="form-label">
+                  {/* <label className="form-label">
                     Name :
-                  </label>
+                  </label> */}
                   <input
                     type="text"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
+                    placeholder='Name :'
                     className="form-input"
                     required
                   />
                 </div>
 
                 <div className="form-group">
-                  <label className="form-label">
+                  {/* <label className="form-label">
                     Email Id :
-                  </label>
+                  </label> */}
                   <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
+                    placeholder='Email Id :'
                     className="form-input"
                     required
                   />
@@ -100,6 +102,7 @@ const ContactUs = () => {
                   />
                 </div>
 
+              </div>
                 <button 
                   type="button"
                   onClick={handleSubmit}
@@ -107,7 +110,6 @@ const ContactUs = () => {
                 >
                   Submit
                 </button>
-              </div>
             </div>
           </div>
         </div>
