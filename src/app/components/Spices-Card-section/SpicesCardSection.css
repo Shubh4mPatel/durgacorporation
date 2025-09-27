@@ -1,0 +1,117 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inknut Antiqua';
+  background-color: #f9f9f9;
+}
+
+/* Container spans full width */
+.spice-cards-container {
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+/* Row for all cards */
+.spice-card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+}
+
+/* Shared card styles */
+.spice-card {
+  flex: 1 1 calc(33.333% - 20px); /* 3 cards per row with spacing */
+  min-width: 300px;
+  height: 260px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spice-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual card backgrounds */
+.conventional-card {
+  background-color: #F4A53D;
+}
+
+.ipm-card {
+  background-color: #D24029;
+}
+
+.organic-card {
+  background-color: #6E862F;
+}
+
+/* Text styles */
+.spice-card-title {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 12px;
+}
+
+.spice-card-description {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/* Responsive Styles */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .spice-card {
+    flex: 1 1 calc(50% - 20px); /* 2 per row */
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .spice-card {
+    flex: 1 1 100%; /* Full width card */
+    height: auto;
+  }
+
+  .spice-card-title {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .spice-card-description {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+  .spice-cards-container {
+    padding: 20px 10px;
+  }
+
+  .spice-card-title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .spice-card-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
