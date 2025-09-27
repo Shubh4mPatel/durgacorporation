@@ -1,0 +1,103 @@
+
+.container {
+    /* width: 100%;
+
+    height: 100vh; */
+    background-image: url('/images/hero_section_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: 1000px 1000px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.content {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    max-width: 600px;
+    padding: 180px 0 100px 0;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.know-more-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-family: inherit;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.know-more-btn:hover {
+    background: white;
+    color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    
+    .description {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    
+    .content {
+        padding: 15px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 28px;
+    }
+    
+    .description {
+        font-size: 14px;
+    }
+    
+    .know-more-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
