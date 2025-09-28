@@ -12,7 +12,11 @@ const ProductsDetails = ({ productId }) => {
   return (
     <>
       <HeroSection />
+      <div className="product-details-page">
       <div className="product-details">
+        <div className="product-details-title-wrapper">
+        <h1 className="product-details-title">Product Details</h1>
+        </div>
       <div className="product-details-container">
       <div className="product-details-main-card">
         <div className="product-details-main-image">
@@ -51,6 +55,7 @@ const ProductsDetails = ({ productId }) => {
         <p className="product-details-description-text">
           {product.description}
         </p>
+      </div>
       </div>
       </div>
       </div>
