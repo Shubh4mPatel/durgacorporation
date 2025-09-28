@@ -2,10 +2,11 @@ import React from "react";
 import "./About.css";
 const About = () => {
   return (
-    <div className="About-section">
+    <div className="About">
+          <div className="About-section">
+          <h1>About Us</h1>
       <div className="About-content">
         <div className="About-text">
-          <h1>About Us</h1>
           <div className="About-paragraph-container">
               <p className="About-para">
                 Founded in 2011, Durga Corporation has spent over 14 years
@@ -27,11 +28,14 @@ const About = () => {
               </p>
           </div>
         </div>
+        <div className="About-image-container">
         <img
-          src="/images/about_us_image.jpg"
+          src="/images/spice_image.png"
           alt="About Us Image"
           className="About-image"
-        />
+          />
+          </div>
+      </div>
       </div>
     </div>
   );
