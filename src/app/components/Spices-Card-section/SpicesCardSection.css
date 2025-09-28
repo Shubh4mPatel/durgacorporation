@@ -2,25 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
 
 /* Reset & Base Styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Inknut Antiqua';
-  background-color: #f9f9f9;
-}
 
 /* Container spans full width */
 .spice-cards-container {
+  display: flex;
+  justify-content: center;
   width: 100%;
   background-color: #f9f9f9;
 }
 
 /* Row for all cards */
 .spice-card-row {
+  max-width: 1650px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -60,13 +53,15 @@ body {
 
 /* Text styles */
 .spice-card-title {
+  font-weight: 400;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 40px;
   margin-bottom: 12px;
 }
 
 .spice-card-description {
-  font-size: 20px;
+  font-weight:400 ;
+  font-size: 1rem;
   line-height: 28px;
 }
 
