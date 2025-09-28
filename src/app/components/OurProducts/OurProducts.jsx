@@ -58,7 +58,8 @@ const OurProducts = () => {
   }, []);
 
   return (
-    <section className="our-products">
+    <section className="products">
+      <div className="our-products" >
       <h2>Our Products</h2>
 
       {/* Background images */}
@@ -166,6 +167,7 @@ const OurProducts = () => {
 
       {/* View More button */}
       <button className="view-more">View More</button>
+      </div>
     </section>
   );
 };

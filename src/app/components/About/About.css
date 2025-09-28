@@ -1,8 +1,24 @@
 /* Base styles */
-.About-section {
+.About{
     background-image: url('/images/about_us_bg.jpg');
-    padding: 2rem 1rem;
     width: 100%;
+    background-color: #E2C08C;
+}
+.About h1{
+  margin-left:50px;
+  color: rgba(0, 0, 0, 1);
+  font-size: 2.5rem;
+  font-weight: 400;
+  width: 1530px;
+  
+}
+.About-section {
+    display: flex;
+    justify-content: center;  
+    flex-direction: column;
+    padding: 5rem 3rem;
+    max-width: 1650px;
+    /* gap: 100px; */
     margin: 0 auto;
   }
   
@@ -10,17 +26,20 @@
     max-width: 1650px;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    justify-content: space-evenly;
+    /* gap: 10rem; */
     flex-wrap: wrap;
   }
   
   .About-text {
     flex: 1;
+    max-width: 450px;
     min-width: 300px;
   }
   
   .About-text h1 {
     font-size: 2.5rem;
+    font-weight: 400;
     /* margin-bottom: 2rem; */
     color: rgba(0, 0, 0, 1);
   }
@@ -30,13 +49,13 @@
     min-height: 400px;
     padding: 2rem;
     background: url('/images/about_bg.png') no-repeat center center;
-    background-size:700px 775px;
+    background-size:500px 850px;
     border-radius: 8px;
   }
   
   .About-para {
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.1rem;
     width: 100%;
     color: rgba(0, 0, 0, 1);
     text-align: justify;
@@ -49,19 +68,29 @@
     margin-top: 1.5rem;
   }
  .About-paragraph-container p:nth-child(1) {
-    padding-top: 1.7rem;
-    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
   }
   
+  /* .About-image-container{
+    min-width: 500px;
+    max-width: 500px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  } */
   .About-image {
+    margin-top: 60px;
     flex: 1;
     min-width: 300px;
     max-width: 500px;
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
   }
   
   /* Tablet styles */
@@ -144,19 +173,19 @@
   
   /* Large desktop styles */
   @media screen and (min-width: 1024px) {
-    .About-section {
+    /* .About-section {
       padding: 3rem 2rem;
-    }
+    } */
     
     
     .About-paragraph-container {
       padding: 3rem;
       min-height: 500px;
-      max-width: 600px;
+      max-width: 450px;
     }
     
     .About-para {
-      font-size: 1.1rem;
+      font-size: 1rem;
       line-height: 1.35;
       max-width: 500px;
     }
