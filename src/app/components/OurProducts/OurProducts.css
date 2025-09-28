@@ -175,15 +175,15 @@
     justify-content: center;
 }
 
-.carousel-arrow:hover {
+/* .carousel-arrow:hover {
     transform: scale(1.15);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
+} */
+    
 /* View More Button */
 .view-more {
     display: block;
-    margin: clamp(25px, 4vw, 35px) auto clamp(40px, 5vw, 56px) auto;
+    margin: clamp(25px, 4vw, 35px) auto 0px auto;
     padding: clamp(12px, 1.5vw, 16px) clamp(28px, 3vw, 36px);
     border: 2px solid #333;
     background-color: transparent;

@@ -86,19 +86,21 @@ const OurProducts = () => {
               <img src={product.image} alt={product.name} />
               <div className="product-info">
                 <span>{product.name}</span>
-                <img src="./images/Vector.png" alt="" />
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white" />
+                </svg>
               </div>
             </div>
           ))}
         </div>
 
         <div className="carousel-controls">
-          <img
-            src="/images/green-arrow-left.png"
-            alt="Previous"
-            className="carousel-arrow left"
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
             onClick={prevSlide}
-          />
+            className='carousel-arrow left'
+          >
+            <path d="M9 18L3 12L9 6L10.4 7.4L6.8 11H19V12V13H6.8L10.4 16.6L9 18Z" fill="#6E862F" />
+          </svg>
           <div className="carousel-dots">
             {/* keep dots static (4 dots max) */}
             {Array.from({ length: 4 }).map((_, index) => (
@@ -108,12 +110,12 @@ const OurProducts = () => {
               />
             ))}
           </div>
-          <img
-            src="/images/green-arrow-right.png"
-            alt="Next"
-            className="carousel-arrow right"
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
             onClick={nextSlide}
-          />
+            className="carousel-arrow right"
+          >
+            <path d="M15 18L21 12L15 6L13.6 7.4L17.2 11H5V13H17.2L13.6 16.6L15 18Z" fill="#6E862F" />
+          </svg>
         </div>
       </div>
 
