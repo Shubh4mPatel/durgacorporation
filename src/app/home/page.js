@@ -11,7 +11,7 @@ export const page = () => {
       <HeroSection />
       <CardSection/>
       <About />
-      <OurProducts/>
+      {/* <OurProducts/> */}
       <Why />
     </>
   );
