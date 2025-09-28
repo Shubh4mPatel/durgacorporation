@@ -42,7 +42,6 @@
   opacity: 1;
   top: 550px;
   right: 45px;
-
 }
 
 .group-img-3 {
@@ -52,7 +51,6 @@
   opacity: 1;
   top: 714.95px;
   left: 860.6px;
-
 }
 
 .group-img-4 {
@@ -62,60 +60,59 @@
   opacity: 1;
   top: 1300px;
   right: 45px;
-
 }
+
+/* ======================= */
+/*   Category Tabs + Line  */
+/* ======================= */
 
 .category-tabs {
   display: flex;
-  justify-content: left;
-  gap: 0;
-  /* background-color: rgba(255, 255, 255, 0.15); */
-  /* border-radius: 12px; */
-  padding: 0px;
-  backdrop-filter: blur(10px);
-  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
-  max-width: 400px;
-  margin: 0 0;
+  flex-wrap: wrap;
+  /* allow wrapping */
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  max-width: 100%;
 }
 
 .tab {
   font-family: 'Inknut Antiqua';
   background: transparent;
   border: none;
-  padding: 12px 24px;
-  font-size: 1.5rem;
+  padding: 12px 20px;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #2C2C2C;
   cursor: pointer;
-  border-radius: 8px;
-  /* transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); */
-  flex: 1;
-  position: relative;
+  border-radius: 6px;
+  flex: 0;
+  white-space: nowrap;
 }
 
 .tab:hover {
   color: #333;
-  /* background-color: rgba(255, 255, 255, 0.2); */
 }
 
 .tab.active {
-  /* background-color: rgba(255, 255, 255, 0.9); */
-  color: #2C2C2C;
   font-weight: 600;
-  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .line {
-  width: 94%;
-  margin: auto;
-
-  hr {
-    padding: 20px 20px;
-    background: transparent;
-    border: none;
-    border-top: solid 2px black;
-  }
+  width: 100%;
+  margin: 0 auto 20px auto;
 }
+
+.line hr {
+  border: none;
+  border-top: 2px solid black;
+  margin: 0;
+  width: 100%;
+}
+
+/* ======================= */
+/*   Products Grid / Card  */
+/* ======================= */
 
 .products-grid {
   display: grid;
@@ -148,12 +145,10 @@
   max-width: 285px;
   height: 245px;
   margin: 40px auto;
-  /* extra margin so images don’t overlap */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   overflow: visible;
-  /* allow image to stick out */
   transition: all 0.3s ease;
 }
 
@@ -168,7 +163,6 @@
   object-fit: contain;
   position: absolute;
   top: -20%;
-  /* makes ~20% of the image pop above card */
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.3s ease;
@@ -201,6 +195,9 @@
   height: 20px;
 }
 
+/* ======================= */
+/*       Pagination        */
+/* ======================= */
 
 .pagination {
   display: flex;
@@ -223,12 +220,10 @@
   color: #0f0f0f;
   font-family: 'Inknut Antiqua';
   position: relative;
-  z-index: 2
+  z-index: 2;
 }
 
-
 .pagination-btn:hover {
-  /* background: linear-gradient(145deg, #9BC273, #8BB164); */
   transform: translateY(-2px);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
 }
@@ -238,10 +233,180 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive adjustments */
+/* ======================= */
+/*   Responsive Queries    */
+/* ======================= */
+
+/* Large desktops (≤1650px) */
+@media (max-width: 1650px) {
+
+  .category-tabs {
+    margin-left: 160px;
+  }
+
+  .products-header h1 {
+    margin: 0 0 30px 140px;
+  }
+
+  .line {
+    width: 77%;
+    margin: 0 auto 20px auto;
+  }
+
+  .tab {
+    font-size: 1.1rem;
+    padding: 10px 16px;
+  }
+
+  .products-section {
+    padding: 20px 30px;
+  }
+
+  .products-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+  }
+
+  .product-card {
+    max-width: 260px;
+    height: 225px;
+  }
+
+  .product-card img {
+    width: 210px;
+    height: 210px;
+    top: -18%;
+  }
+}
+
+/* Medium desktops (≤1440px) */
+@media (max-width: 1440px) {
+
+  .category-tabs {
+    margin-left: 70px;
+  }
+
+  .products-header h1 {
+    margin: 0 0 30px 50px;
+  }
+
+  .line {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+
+  .tab {
+    font-size: 1rem;
+    padding: 8px 14px;
+  }
+
+  .products-header h1 {
+    font-size: 2rem;
+  }
+
+  .products-grid {
+    gap: 20px;
+  }
+
+  .product-card {
+    max-width: 240px;
+    height: 210px;
+  }
+
+  .product-card img {
+    width: 190px;
+    height: 190px;
+    top: -16%;
+  }
+}
+
+/* Small desktops (≤1280px) */
+@media (max-width: 1280px) {
+
+  .category-tabs {
+    margin-left: 30px;
+  }
+
+  .products-header h1 {
+    margin: 0 0 30px 20px;
+  }
+
+  .line {
+    width: 95%;
+    margin: 0 auto 20px auto;
+  }
+
+  .products-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .product-card {
+    max-width: 220px;
+    height: 200px;
+  }
+
+  .product-card img {
+    width: 170px;
+    height: 170px;
+    top: -14%;
+  }
+}
+
+/* Tablets landscape (≤1024px) */
+@media (max-width: 1024px) {
+  .category-tabs {
+    justify-content: left;
+    gap: 12px;
+  }
+
+  .tab {
+    font-size: 0.95rem;
+    padding: 6px 12px;
+  }
+
+  .products-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-card {
+    max-width: 200px;
+    height: 180px;
+  }
+
+  .product-card img {
+    width: 150px;
+    height: 150px;
+    top: -12%;
+  }
+}
+
+/* Tablets portrait & large mobiles (≤768px) */
 @media (max-width: 768px) {
   .products-section {
     padding: 40px 20px;
+  }
+
+  .category-tabs {
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  .tab {
+    font-size: 0.9rem;
+    padding: 6px 10px;
   }
 
   .products-header h1 {
@@ -262,16 +427,25 @@
     width: 100px;
     height: 100px;
   }
+
+  .line hr {
+    border-top: 1.5px solid black;
+  }
 }
 
+/* Small mobiles (≤480px) */
 @media (max-width: 480px) {
   .category-tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
     max-width: 280px;
   }
 
   .tab {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.85rem;
   }
 
   .products-grid {
@@ -294,5 +468,31 @@
 
   .product-info span {
     font-size: 0.85rem;
+  }
+
+  .line {
+    margin-top: 8px;
+  }
+}
+
+/* Extra small mobiles (≤375px) */
+@media (max-width: 375px) {
+  .products-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .product-card img {
+    width: 100px;
+    height: 100px;
+    top: -8%;
   }
 }

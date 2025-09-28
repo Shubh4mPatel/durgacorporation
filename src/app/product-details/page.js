@@ -5,7 +5,6 @@ import ProductDetails from "../components/ProductDetails/ProductDetails";
 export const page = () => {
   return (
     <>
-      <HeroSection/>
       <ProductDetails/>
     </>
   );
