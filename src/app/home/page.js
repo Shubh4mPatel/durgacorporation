@@ -8,7 +8,7 @@ import Why from "../components/why/Why";
 export const page = () => {
   return (
     <>
-      <HeroSection />
+      <HeroSection isButtonVisible={true} />
       <CardSection/>
       <About />
       <OurProducts/>
