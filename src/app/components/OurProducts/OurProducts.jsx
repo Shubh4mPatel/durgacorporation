@@ -1,5 +1,13 @@
 'use client';
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
 import './OurProducts.css';
 
 const products = [
@@ -22,56 +30,38 @@ const products = [
 ];
 
 const OurProducts = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [itemsPerSlide, setItemsPerSlide] = useState(4);
+  const [slidesPerView, setSlidesPerView] = useState(4);
+  const [dotsCount, setDotsCount] = useState(4);
 
-  // responsive setup
-  const updateItemsPerSlide = useCallback(() => {
-    const width = window.innerWidth;
-    if (width <= 480) {
-      setItemsPerSlide(1);
-    } else if (width <= 1023) {
-      setItemsPerSlide(2);
-    } else if (width <= 1440) {
-      setItemsPerSlide(3);
-    } else {
-      setItemsPerSlide(4);
-    }
+  // Update slides per view and dots count based on screen size
+  useEffect(() => {
+    const updateSlidesPerView = () => {
+      const width = window.innerWidth;
+      if (width <= 480) {
+        setSlidesPerView(1);
+        setDotsCount(2); // Only 2 dots for mobile
+      } else if (width <= 1023) {
+        setSlidesPerView(2);
+        setDotsCount(3); // Only 3 dots for tablet
+      } else if (width <= 1440) {
+        setSlidesPerView(3);
+        setDotsCount(4); // 4 dots for laptop
+      } else {
+        setSlidesPerView(4);
+        setDotsCount(4); // 4 dots for desktop
+      }
+    };
+
+    updateSlidesPerView();
+    window.addEventListener('resize', updateSlidesPerView);
+    return () => window.removeEventListener('resize', updateSlidesPerView);
   }, []);
-
-  useEffect(() => {
-    updateItemsPerSlide();
-    window.addEventListener('resize', updateItemsPerSlide);
-    return () => window.removeEventListener('resize', updateItemsPerSlide);
-  }, [updateItemsPerSlide]);
-
-  // infinite auto loop
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 3000);
-    return () => clearInterval(interval);
-  });
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % products.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + products.length) % products.length);
-  };
-
-  // visible items (wrap around for infinite loop)
-  const visibleProducts = [];
-  for (let i = 0; i < itemsPerSlide; i++) {
-    visibleProducts.push(products[(currentIndex + i) % products.length]);
-  }
 
   return (
     <section className="our-products">
       <h2>Our Products</h2>
 
-      {/* background images */}
+      {/* Background images */}
       <div className="background-images">
         <img src="./images/Group.png" alt="" className="group-img" />
         <img src="/images/Clip path group-3.png" alt="" className="group-img-2" />
@@ -79,44 +69,99 @@ const OurProducts = () => {
         <img src="/images/Clip path group-3.png" alt="" className="group-img-4" />
       </div>
 
-      <div className="carousel-wrapper">
-        <div className="carousel-slide">
-          {visibleProducts.map((product) => (
-            <div className="product-card" key={product.id}>
-              <img src={product.image} alt={product.name} />
-              <div className="product-info">
-                <span>{product.name}</span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white" />
-                </svg>
+      <div className="swiper-container">
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
+          spaceBetween={0}
+          slidesPerView={slidesPerView}
+          centeredSlides={false}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          navigation={{
+            nextEl: '.swiper-button-next-custom',
+            prevEl: '.swiper-button-prev-custom',
+          }}
+          pagination={{
+            el: '.swiper-pagination-custom',
+            clickable: true,
+            dynamicBullets: false,
+            renderBullet: function (index, className) {
+              // Only render bullets up to the calculated dotsCount
+              if (index < dotsCount) {
+                return '<span class="' + className + ' custom-bullet"></span>';
+              }
+              return '';
+            },
+          }}
+          speed={800}
+          effect="slide"
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            481: {
+              slidesPerView: 1,
+              spaceBetween: 25,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 25,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1441: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+            1920: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            }
+          }}
+          grabCursor={true}
+          touchEventsTarget="container"
+          simulateTouch={true}
+          allowTouchMove={true}
+          className="products-swiper"
+        >
+          {products.map((product) => (
+            <SwiperSlide key={product.id}>
+              <div className="product-card">
+                <img src={product.image} alt={product.name} />
+                <div className="product-info">
+                  <span>{product.name}</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white" />
+                  </svg>
+                </div>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
 
-        <div className="carousel-controls">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-            onClick={prevSlide}
-            className='carousel-arrow left'
-          >
+        {/* Custom Navigation and Pagination */}
+      </div>
+      <div className="swiper-controls">
+        <button className="swiper-button-prev-custom">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M9 18L3 12L9 6L10.4 7.4L6.8 11H19V12V13H6.8L10.4 16.6L9 18Z" fill="#6E862F" />
           </svg>
-          <div className="carousel-dots">
-            {/* keep dots static (4 dots max) */}
-            {Array.from({ length: 4 }).map((_, index) => (
-              <span
-                key={index}
-                className={`dot ${index === currentIndex % 4 ? 'active' : ''}`}
-              />
-            ))}
-          </div>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-            onClick={nextSlide}
-            className="carousel-arrow right"
-          >
+        </button>
+
+        <span className="swiper-pagination-custom"></span>
+
+        <button className="swiper-button-next-custom">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M15 18L21 12L15 6L13.6 7.4L17.2 11H5V13H17.2L13.6 16.6L15 18Z" fill="#6E862F" />
           </svg>
-        </div>
+        </button>
       </div>
 
       {/* View More button */}
