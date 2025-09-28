@@ -74,7 +74,7 @@
 
 .contact-form-container {
   width: 100%;
-  max-width: 450px;
+  max-width: 560px;
 }
 
 .contact-form {
@@ -130,7 +130,13 @@
   min-height: 120px;
   padding-top: 0.8rem;
 }
-
+textarea::-webkit-scrollbar {   /* Chrome, Safari, Edge */
+  display: none;
+}
+textarea {
+  overflow: auto;              /* scrolling still possible */
+  scrollbar-width: none;       /* Firefox */
+}
 .submit-button {
   background: transparent;
   color: #f0f0f0;

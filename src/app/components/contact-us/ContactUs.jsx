@@ -7,6 +7,7 @@ const ContactUs = () => {
     name: "",
     email: "",
     message: "",
+    phone: "",
   });
 
   const handleChange = (e) => {
@@ -123,6 +124,20 @@ const ContactUs = () => {
                     required
                   />
                 </div>
+                <div className="form-group">
+                  {/* <label className="form-label">
+                    Email Id :
+                  </label> */}
+                  <input
+                    type="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    placeholder="Phone No :"
+                    className="form-input"
+                    required
+                  />
+                </div>
 
                 <div className="form-group">
                   <label className="form-label">Message :</label>
@@ -130,7 +145,7 @@ const ContactUs = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    rows={6}
+                    rows={1}
                     className="form-textarea"
                     required
                   />
@@ -141,7 +156,7 @@ const ContactUs = () => {
                 onClick={handleSubmit}
                 className="submit-button"
               >
-                Submit
+                Enquir Now
               </button>
             </div>
           </div>
