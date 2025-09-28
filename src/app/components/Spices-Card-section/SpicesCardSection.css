@@ -13,7 +13,7 @@
 
 /* Row for all cards */
 .spice-card-row {
-  max-width: 1650px;
+  /* max-width: 1650px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

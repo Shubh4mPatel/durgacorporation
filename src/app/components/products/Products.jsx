@@ -1,27 +1,26 @@
 'use client';
 import React, { useState } from 'react';
 import './Products.css';
-
-// Product Card Component
-const ProductCard = ({ image, title, category }) => {
-  return (
-    <div className="product-card">
-      <div className="product-image">
-        <img src={image} alt={title} />
-      </div>
-      <div className="product-info">
-        <h3>{title}</h3>
-        <span className="category">{category}</span>
-        <div className="arrow">→</div>
-      </div>
-    </div>
-  );
-};
-
 // Main Products Section Component
 const ProductsSection = () => {
   const [activeCategory, setActiveCategory] = useState('Spices');
   const [visibleRows, setVisibleRows] = useState(2); // Start with 2 rows (8 items) for Spices
+
+
+  // Product Card Component
+  const ProductCard = ({ image, title, category }) => {
+    return (
+      <div className="product-card">
+        <img src={image} alt={title} />
+        <div className="product-info">
+          <span>{title}</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white" />
+          </svg>
+        </div>
+      </div>
+    );
+  };
 
   const products = [
     {
@@ -178,12 +177,12 @@ const ProductsSection = () => {
 
   // Filter products based on active category
   const filteredProducts = products.filter(product => product.category === activeCategory);
-  
+
   // Calculate initial rows to show: 2 rows (8 items) if category has more than 8 items, otherwise 1 row
   const getInitialRows = (categoryProducts) => {
     return categoryProducts.length > 8 ? 2 : 1;
   };
-  
+
   // Calculate products to show based on visible rows (4 products per row)
   const productsPerRow = 4;
   const productsToShow = visibleRows * productsPerRow;
@@ -205,14 +204,20 @@ const ProductsSection = () => {
     <div className="products-section">
       <div className="products-header">
         <h1>Our Products</h1>
+        <div className="background-images">
+          <img src="/images/Group.png" alt="" className="group-img" />
+          <img src="/images/Group.png" alt="" className="group-img-2" />
+          <img src="/images/Clip path group-3.png" alt="" className="group-img-3" />
+          <img src="/images/Clip path group-3.png" alt="" className="group-img-4" />
+        </div>
         <div className="category-tabs">
-          <button 
+          <button
             className={`tab ${activeCategory === 'Spices' ? 'active' : ''}`}
             onClick={() => handleCategoryChange('Spices')}
           >
             Spices
           </button>
-          <button 
+          <button
             className={`tab ${activeCategory === 'Oil Seeds' ? 'active' : ''}`}
             onClick={() => handleCategoryChange('Oil Seeds')}
           >
@@ -221,13 +226,16 @@ const ProductsSection = () => {
         </div>
       </div>
 
+      <div className='line'>
+        <hr />
+      </div>
+
       <div className="products-grid">
         {displayedProducts.map(product => (
-          <ProductCard 
+          <ProductCard
             key={product.id}
-            image={product.image}
             title={product.title}
-            category={product.category}
+            image={product.image}
           />
         ))}
       </div>
