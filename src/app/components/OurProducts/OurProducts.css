@@ -17,7 +17,7 @@
 .our-products h2 {
     font-size: clamp(24px, 4vw, 40px);
     margin: 20px;
-    color:rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
     position: relative;
     z-index: 1;
     text-align: left;
@@ -32,30 +32,33 @@
     transition: all 0.3s ease;
 }
 
-.group-img { 
-    width: clamp(150px, 20vw, 320px); 
-    top: clamp(-20px, -2vw, -40px); 
-    left: clamp(30px, 15vw, 250px); 
+.group-img {
+    width: clamp(150px, 20vw, 320px);
+    top: clamp(-20px, -2vw, -40px);
+    left: clamp(30px, 15vw, 250px);
 }
-.group-img-2 { 
-    width: clamp(80px, 10vw, 140px); 
-    top: clamp(80px, 10vw, 120px); 
-    right: clamp(5%, 8vw, 10%); 
+
+.group-img-2 {
+    width: clamp(80px, 10vw, 140px);
+    top: clamp(80px, 10vw, 120px);
+    right: clamp(5%, 8vw, 10%);
 }
-.group-img-3 { 
-    width: clamp(200px, 25vw, 400px); 
-    bottom: clamp(30px, 5vw, 60px); 
-    right: clamp(5%, 6vw, 8%); 
+
+.group-img-3 {
+    width: clamp(200px, 25vw, 400px);
+    bottom: clamp(30px, 5vw, 60px);
+    right: clamp(5%, 6vw, 8%);
 }
-.group-img-4 { 
-    width: clamp(140px, 18vw, 260px); 
-    bottom: clamp(20px, 4vw, 50px); 
-    left: clamp(-20px, -3vw, -40px); 
+
+.group-img-4 {
+    width: clamp(140px, 18vw, 260px);
+    bottom: clamp(20px, 4vw, 50px);
+    left: clamp(-20px, -3vw, -40px);
 }
 
 /* Base Carousel Styles */
-.carousel-wrapper { 
-    width: 100%; 
+.carousel-wrapper {
+    width: 100%;
     position: relative;
     margin-top: clamp(40px, 8vw, 100px);
     box-sizing: border-box;
@@ -66,6 +69,7 @@
     display: flex;
     transition: transform 0.5s ease-in-out;
     margin-top: clamp(40px, 6vw, 63px);
+    padding: 0 20px;
 }
 
 /* Base Product Card */
@@ -80,12 +84,12 @@
     flex-shrink: 0;
 }
 
-.product-card:hover { 
-    transform: translateY(-8px); 
+.product-card:hover {
+    transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-.product-card > img {
+.product-card>img {
     border-radius: 8px;
     object-fit: cover;
     position: absolute;
@@ -94,8 +98,8 @@
     transition: transform 0.3s ease;
 }
 
-.product-card:hover > img { 
-    transform: translateX(-50%) scale(1.05); 
+.product-card:hover>img {
+    transform: translateX(-50%) scale(1.05);
 }
 
 .product-info {
@@ -104,24 +108,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    padding: 0 1px;
 }
 
-.product-info span { 
-    font-size: clamp(14px, 1.5vw, 16px); 
+.product-info span {
+    font-size: clamp(14px, 1.5vw, 16px);
     font-weight: 600;
 }
 
-.product-info img { 
-    width: 20px; 
-    height: 20px; 
-    margin-left: 8px; 
-    cursor: pointer; 
-    transition: transform 0.3s ease; 
+.product-info img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.product-info img:hover { 
-    transform: scale(1.2); 
+.product-info img:hover {
+    transform: scale(1.2);
 }
 
 /* Carousel Controls */
@@ -151,7 +155,7 @@
     transition: all 0.3s ease;
 }
 
-.carousel-dots .dot.active { 
+.carousel-dots .dot.active {
     background: #6E862F;
     transform: scale(1.2);
 }
@@ -171,15 +175,15 @@
     justify-content: center;
 }
 
-.carousel-arrow:hover { 
+.carousel-arrow:hover {
     transform: scale(1.15);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* View More Button */
 .view-more {
-    display: block;  
-    margin: clamp(25px, 4vw, 35px) auto clamp(40px, 5vw, 56px) auto; 
+    display: block;
+    margin: clamp(25px, 4vw, 35px) auto clamp(40px, 5vw, 56px) auto;
     padding: clamp(12px, 1.5vw, 16px) clamp(28px, 3vw, 36px);
     border: 2px solid #333;
     background-color: transparent;
@@ -192,8 +196,8 @@
     font-family: inherit;
 }
 
-.view-more:hover { 
-    background-color: #333; 
+.view-more:hover {
+    background-color: #333;
     color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
@@ -209,28 +213,28 @@
         margin: 0 120px;
         padding: 0;
     }
-    
+
     .carousel-slide {
         gap: 40px;
         justify-content: center;
         padding: 0 30px;
     }
-    
+
     .product-card {
         width: calc(25% - 30px);
-        padding: 120px 25px 25px;
-        max-width: 380px;
+        padding: 100px 25px 25px;
+        max-width: 350px;
     }
-    
-    .product-card > img {
+
+    .product-card>img {
         width: 320px;
         height: 320px;
         top: -70px;
     }
-    
+
     .product-info {
         margin-top: 150px;
-        padding: 0 20px;
+        padding: 10px 0 0 0; 
     }
 }
 
@@ -240,29 +244,29 @@
         margin: 0 0px;
         padding: 0;
     }
-    
+
     .carousel-slide {
         gap: 30px;
         justify-content: center;
         padding: 0 20px;
     }
-    
+
     .product-card {
         width: calc(25% - 22px);
-        padding: 100px 20px 20px;
-        max-width: 350px;
+        padding: 60px 20px 20px;
+        max-width: 290px;
     }
-    
-    .product-card > img {
-        width: 285px;
-        height: 285px;
+
+    .product-card>img {
+        width: 250px;
+        height: 250px;
         top: -60px;
     }
-    
+
     .product-info {
         margin-top: 131px;
     }
-    
+
     .background-images img {
         opacity: 1;
     }
@@ -271,32 +275,33 @@
 /* Laptops and Standard Desktops - 1024px to 1440px (3 cards) */
 @media (min-width: 1024px) and (max-width: 1440px) {
     .carousel-wrapper {
-        margin: 0 0px; /* 60px margin as requested */
+        margin: 0 0px;
+        /* 60px margin as requested */
         padding: 0;
     }
-    
+
     .carousel-slide {
         gap: 25px;
         justify-content: center;
         padding: 0 20px;
     }
-    
+
     .product-card {
-        width: calc(33.333% - 17px);
+        width: calc(33.333% - 14px);
         padding: clamp(85px, 8vw, 100px) clamp(18px, 2vw, 22px) clamp(18px, 2vw, 22px);
-        max-width: 340px;
+        max-width: 330px;
     }
-    
-    .product-card > img {
+
+    .product-card>img {
         width: clamp(250px, 22vw, 285px);
         height: clamp(250px, 22vw, 285px);
         top: clamp(-55px, -5vw, -65px);
     }
-    
+
     .product-info {
         margin-top: clamp(115px, 12vw, 135px);
     }
-    
+
     .background-images img {
         opacity: 0.9;
     }
@@ -306,30 +311,31 @@
 @media (min-width: 768px) and (max-width: 1023px) {
     .carousel-wrapper {
         margin: 0 0px;
-        padding: 0 100px; /* Added proper right padding */
+        padding: 0 100px;
+        /* Added proper right padding */
     }
-    
+
     .carousel-slide {
         gap: 25px;
         justify-content: center;
     }
-    
+
     .product-card {
         width: calc(50% - 30px);
         padding: clamp(75px, 7vw, 90px) clamp(16px, 2vw, 20px) clamp(16px, 2vw, 20px);
         max-width: 250px;
     }
-    
-    .product-card > img {
+
+    .product-card>img {
         width: clamp(210px, 28vw, 110px);
         height: clamp(210px, 28vw, 100px);
         top: clamp(-20px, -5vw, -55px);
     }
-    
+
     .product-info {
         margin-top: clamp(120px, 10vw, 115px);
     }
-    
+
     .background-images img {
         opacity: 0.7;
     }
@@ -339,35 +345,36 @@
 @media (min-width: 481px) and (max-width: 767px) {
     .carousel-wrapper {
         margin: 0 0px;
-        padding: 0 15px; /* Added proper right padding */
+        padding: 0 15px;
+        /* Added proper right padding */
     }
-    
+
     .carousel-slide {
         gap: 20px;
         justify-content: center;
     }
-    
+
     .product-card {
         width: clamp(200px, 75vw, 250px);
         padding: clamp(70px, 8vw, 85px) 18px 18px;
     }
-    
-    .product-card > img {
+
+    .product-card>img {
         width: clamp(100px, 30vw, 250px);
         height: clamp(100px, 30vw, 170px);
         top: clamp(-20px, -5vw, -50px);
         min-width: 200px;
         min-height: 170px;
     }
-    
+
     .product-info {
         margin-top: clamp(85px, 10vw, 105px);
     }
-    
+
     .background-images img {
         opacity: 0.5;
     }
-    
+
     .our-products h2 {
         text-align: center;
     }
@@ -377,34 +384,35 @@
 @media (min-width: 321px) and (max-width: 480px) {
     .carousel-wrapper {
         margin: 0 0px;
-        padding: 0 15px; /* Added proper right padding */
+        padding: 0 15px;
+        /* Added proper right padding */
     }
-    
+
     .carousel-slide {
         gap: 15px;
         justify-content: center;
     }
-    
+
     .product-card {
         width: calc(100% - 50px);
         padding: 65px 16px 16px;
-        max-width: 250px;
+        max-width: 230px;
     }
-    
-    .product-card > img {
+
+    .product-card>img {
         width: 190px;
         height: 190px;
         top: -42px;
     }
-    
+
     .product-info {
         margin-top: 85px;
     }
-    
+
     .background-images img {
         opacity: 0.4;
     }
-    
+
     .our-products h2 {
         text-align: center;
         margin: 15px;
@@ -414,48 +422,71 @@
 /* Extra Small Mobile - 320px and below (1 card) */
 @media (max-width: 320px) {
     .carousel-wrapper {
-        margin: 0 0px; /* 20px margin as requested */
-        padding: 0 10px; /* Added proper right padding */
+        margin: 0 0px;
+        /* 20px margin as requested */
+        padding: 0 10px;
+        /* Added proper right padding */
     }
-    
+
     .carousel-slide {
         gap: 10px;
         justify-content: center;
     }
-    
+
     .product-card {
         width: calc(100% - 20px);
-        padding: 60px 10px 10px; /* 10px inside padding as requested */
+        padding: 60px 10px 10px;
+        /* 10px inside padding as requested */
         max-width: 200px;
     }
-    
-    .product-card > img {
+
+    .product-card>img {
         width: 170px;
         height: 170px;
-        top: -38px; 
-        max-width: 170px;/* Reduced space between image and card */
+        top: -38px;
+        max-width: 170px;
+        /* Reduced space between image and card */
     }
-    
+
     .product-info {
         margin-top: 75px;
         padding: 0 8px;
     }
-    
+
     .background-images img {
         opacity: 0.3;
     }
-    
+
     .our-products h2 {
         text-align: center;
         margin: 15px 10px;
         font-size: 22px;
     }
-    
+
     /* Adjust background images for mobile */
-    .group-img { width: 140px; top: -15px; left: 20px; }
-    .group-img-2 { width: 70px; top: 90px; right: 3%; }
-    .group-img-3 { width: 180px; bottom: 35px; right: 3%; }
-    .group-img-4 { width: 120px; bottom: 25px; left: -15px; }
+    .group-img {
+        width: 140px;
+        top: -15px;
+        left: 20px;
+    }
+
+    .group-img-2 {
+        width: 70px;
+        top: 90px;
+        right: 3%;
+    }
+
+    .group-img-3 {
+        width: 180px;
+        bottom: 35px;
+        right: 3%;
+    }
+
+    .group-img-4 {
+        width: 120px;
+        bottom: 25px;
+        left: -15px;
+    }
 }
 
 /* Ultra-small screens */
@@ -463,13 +494,13 @@
     .product-card {
         max-width: 200px;
     }
-    
-    .product-card > img {
+
+    .product-card>img {
         width: 150px;
         height: 150px;
         top: -35px;
     }
-    
+
     .carousel-wrapper {
         margin: 0 15px;
     }
@@ -477,18 +508,15 @@
 
 /* Hide arrows on very small screens for better UX */
 @media (max-width: 640px) {
-    .carousel-arrow {
-        display: none;
-    }
-    
+
     .carousel-controls {
         gap: 0;
     }
-    
+
     .carousel-dots {
         gap: 12px;
     }
-    
+
     .carousel-dots .dot {
         width: 12px;
         height: 12px;
@@ -500,33 +528,34 @@
     .product-card {
         padding: 50px 15px 15px;
     }
-    
-    .product-card > img {
+
+    .product-card>img {
         width: clamp(120px, 15vw, 160px);
         height: clamp(120px, 15vw, 160px);
         top: -30px;
     }
-    
+
     .product-info {
         margin-top: 60px;
     }
-    
+
     .our-products h2 {
         font-size: clamp(20px, 3vw, 28px);
         margin: 10px 20px;
     }
-    
+
     .carousel-wrapper {
         margin-top: 30px;
     }
 }
 
 /* High DPI screens optimization */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
     .product-card {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     }
-    
+
     .product-card:hover {
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
     }
@@ -534,18 +563,19 @@
 
 /* Print styles */
 @media print {
+
     .carousel-controls,
     .background-images,
     .view-more {
         display: none !important;
     }
-    
+
     .carousel-slide {
         display: grid !important;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 20px;
     }
-    
+
     .product-card {
         break-inside: avoid;
         position: relative;
