@@ -16,8 +16,8 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <nav className="nav-left">
-          <a href="/home" className={`nav-link ${pathname === '/home' ? 'active' : ''}`}>Home</a>
-          <a href="/about-us" className={`nav-link ${pathname === '/about-us' ? 'active' : ''}`}>About Us</a>
+          <a href="/home/" className={`nav-link ${pathname === '/home/' ? 'active' : ''}`}>Home</a>
+          <a href="/about-us/" className={`nav-link ${pathname === '/about-us/' ? 'active' : ''}`}>About Us</a>
         </nav>
         
         <div className="logo-container">
@@ -29,8 +29,8 @@ const Header = () => {
         </div>
         
         <nav className="nav-right">
-          <a href="/products" className={`nav-link ${pathname === '/products' ? 'active' : ''}`}>Products</a>
-          <a href="/contact-us" className={`nav-link ${pathname === '/contact-us' ? 'active' : ''}`}>Contact Us</a>
+          <a href="/products/" className={`nav-link ${pathname === '/products/' ? 'active' : ''}`}>Products</a>
+          <a href="/contact-us/" className={`nav-link ${pathname === '/contact-us/' ? 'active' : ''}`}>Contact Us</a>
         </nav>
 
         {/* Mobile Toggle */}
