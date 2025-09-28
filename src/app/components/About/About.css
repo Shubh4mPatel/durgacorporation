@@ -173,9 +173,9 @@
   
   /* Large desktop styles */
   @media screen and (min-width: 1024px) {
-    .About-section {
-      /* padding: 3rem 2rem; */
-    }
+    /* .About-section {
+      padding: 3rem 2rem;
+    } */
     
     
     .About-paragraph-container {
