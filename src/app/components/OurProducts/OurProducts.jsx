@@ -39,13 +39,13 @@ const OurProducts = () => {
       const width = window.innerWidth;
       if (width <= 480) {
         setSlidesPerView(1);
-        setDotsCount(2); // Only 2 dots for mobile
+        setDotsCount(1); // Only 2 dots for mobile
       } else if (width <= 1023) {
         setSlidesPerView(2);
-        setDotsCount(3); // Only 3 dots for tablet
+        setDotsCount(2); // Only 3 dots for tablet
       } else if (width <= 1440) {
         setSlidesPerView(3);
-        setDotsCount(4); // 4 dots for laptop
+        setDotsCount(3); // 4 dots for laptop
       } else {
         setSlidesPerView(4);
         setDotsCount(4); // 4 dots for desktop
