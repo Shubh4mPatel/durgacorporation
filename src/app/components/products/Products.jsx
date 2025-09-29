@@ -204,12 +204,6 @@ const ProductsSection = () => {
     <div className="products-section">
       <div className="products-header">
         <h1>Our Products</h1>
-        <div className="background-images">
-          <img src="/images/Group.png" alt="" className="group-img" />
-          <img src="/images/Group.png" alt="" className="group-img-2" />
-          <img src="/images/Clip path group-3.png" alt="" className="group-img-3" />
-          <img src="/images/Clip path group-3.png" alt="" className="group-img-4" />
-        </div>
         <div className="category-tabs">
           <button
             className={`tab ${activeCategory === 'Spices' ? 'active' : ''}`}
