@@ -87,7 +87,7 @@
 
 .products-swiper {
     width: 100%;
-    padding: 60px 0 20px;
+    padding: 100px 0 20px;
     /* Top padding for slides, bottom padding for pagination */
     overflow: hidden;
 }
@@ -287,7 +287,7 @@
 /* Large Desktops - 1441px to 1919px */
 @media (min-width: 1441px) and (max-width: 1919px) {
     .products-swiper {
-        padding: 60px 0px 0px;
+        padding: 100px 0px 0px;
     }
 
     .product-card {
@@ -313,7 +313,7 @@
 /* Laptops and Standard Desktops - 1024px to 1440px */
 @media (min-width: 1024px) and (max-width: 1440px) {
     .products-swiper {
-        padding: clamp(85px, 8vw, 100px) 20px clamp(18px, 2vw, 22px);
+        /* padding: clamp(65px, 8vw, 80px) 20px clamp(18px, 2vw, 22px); */
     }
 
     .product-card {
@@ -397,7 +397,7 @@
 /* Small Mobile - 321px to 480px */
 @media (min-width: 321px) and (max-width: 480px) {
     .products-swiper {
-        padding: 65px 0px 16px;
+        padding: 90px 0px 16px;
     }
 
     .product-card {
