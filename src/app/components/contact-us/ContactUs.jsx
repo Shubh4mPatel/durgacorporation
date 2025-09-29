@@ -45,7 +45,7 @@ const ContactUs = () => {
                   />
                 </svg>
               </div>
-              <span>+91 00000 00000</span>
+              <span>+91 9537575774</span>
             </div>
 
             <div className="contact-item">
@@ -63,7 +63,7 @@ const ContactUs = () => {
                   />
                 </svg>
               </div>
-              <span>digiwaves19@lorem.com</span>
+              <span>info@durgacorporation.com</span>
             </div>
 
             <div className="contact-item">
