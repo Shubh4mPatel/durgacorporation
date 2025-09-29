@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
 import "./ContactUs.css";
 
 const ContactUs = () => {
@@ -10,6 +11,8 @@ const ContactUs = () => {
     phone: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -17,9 +20,46 @@ const ContactUs = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
+    
+    setIsSubmitting(true);
+    
+    try {
+      // EmailJS configuration
+      const emailjsConfig = {
+        serviceId: 'service_zgfg3yn',
+        templateId: 'template_glmfgaj',
+        publicKey: 'feS5Orqc4V-zhCBUF'
+      };
+
+      // Prepare template parameters for EmailJS
+      const templateParams = {
+        from_name: formData.name.trim(),
+        from_email: formData.email.trim(),
+        phone: formData.phone.trim(),
+        message: formData.message.trim(),
+        submission_date: new Date().toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' }),
+        submission_time: new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', hour12: true }),
+        to_name: 'Admin',
+      };
+
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
+        templateParams,
+        emailjsConfig.publicKey
+      );
+
+      // alert('Thank you! Your message is received.');
+      setFormData({ name: '', email: '', message: '', phone: '' });
+    } catch (err) {
+      console.error('EmailJS Error:', err);
+      alert('Error! Something went wrong.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -155,8 +195,9 @@ const ContactUs = () => {
                 type="button"
                 onClick={handleSubmit}
                 className="submit-button"
+                disabled={isSubmitting}
               >
-                Enquir Now
+                {isSubmitting ? 'Submitting...' : 'Enquir Now'}
               </button>
             </div>
           </div>
