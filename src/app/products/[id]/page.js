@@ -1,3 +1,4 @@
+
 import ProductsDetails from "../../components/ProductDetails/ProductDetails";
 import products from "../../data/Products";
 
@@ -8,6 +9,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ProductPage({ params }) {
-  return <ProductsDetails productId={params.id} />;
+export default async function ProductPage({ params }) {
+  const { id } = await params;
+  
+  return <ProductsDetails productId={id} />;
 }
