@@ -1,8 +1,8 @@
 /* Base styles */
 .About{
-    background-image: url('/images/about_us_bg.jpg');
+    /* background-image: url('/images/about_us_bg.jpg'); */
     width: 100%;
-    background-color: #E2C08C;
+    background-color: #ECE3D4;
 }
 .About h1{
   margin-left:50px;
@@ -13,10 +13,13 @@
   
 }
 .About-section {
+    background-image: url('/images/about_us_bg.jpg');
+    background-size: cover;
+    background-position: center;  
     display: flex;
     justify-content: center;  
     flex-direction: column;
-    padding: 5rem 3rem;
+    padding: 3rem 3rem;
     max-width: 1650px;
     /* gap: 100px; */
     margin: 0 auto;
@@ -27,7 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* gap: 10rem; */
+    /* gap: rem; */
     flex-wrap: wrap;
   }
   
@@ -49,7 +52,7 @@
     min-height: 400px;
     padding: 2rem;
     background: url('/images/about_bg.png') no-repeat center center;
-    background-size:500px 850px;
+    background-size:560px 850px;
     border-radius: 8px;
   }
   
@@ -84,8 +87,8 @@
   .About-image {
     margin-top: 60px;
     flex: 1;
-    min-width: 300px;
-    max-width: 500px;
+    /* min-width: 300px; */
+    max-width: 600px;
     /* width: 100%; */
     height: auto;
     object-fit: cover;
