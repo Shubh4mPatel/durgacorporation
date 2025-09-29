@@ -25,39 +25,39 @@ const ProductsSection = () => {
   const products = [
     {
       id: 1,
-      title: "Fennel Seeds",
+      title: "Black Pepper",
       category: "Spices",
-      image: "/images/Frame 13.png"
+      image: "/images/Black Pepper.png"
     },
     {
       id: 2,
-      title: "Coriandrum Sativum",
+      title: "Caasia",
       category: "Spices",
-      image: "/images/Frame 13-1.png"
+      image: "/images/Caasia.png"
     },
     {
       id: 3,
-      title: "Flax Seeds",
+      title: "Cummin Seeds",
       category: "Oil Seeds",
-      image: "/images/Frame 13-2.png"
+      image: "/images/Frame 13-1.png"
     },
     {
       id: 4,
-      title: "Cumin Seeds",
+      title: "Chilli Flakes",
       category: "Spices",
-      image: "/images/Frame 13-3.png"
+      image: "/images/CHILLI FLAKES.png"
     },
     {
       id: 5,
-      title: "Fennel Seeds",
+      title: "Cloves",
       category: "Spices",
-      image: "/images/Frame 13.png"
+      image: "/images/Clove.png"
     },
     {
       id: 6,
-      title: "Coriandrum Sativum",
+      title: "Coriander Powder",
       category: "Spices",
-      image: "/images/Frame 13-1.png"
+      image: "/images/CORIANDER POWDER.png"
     },
     {
       id: 7,
@@ -67,111 +67,51 @@ const ProductsSection = () => {
     },
     {
       id: 8,
-      title: "Cumin Seeds",
+      title: "Cumin Powder",
       category: "Spices",
-      image: "/images/Frame 13-3.png"
+      image: "/images/CUMIN POWDER.png"
     },
     {
       id: 9,
-      title: "Fennel Seeds",
+      title: "Curry Powder",
       category: "Spices",
-      image: "/images/Frame 13.png"
+      image: "/images/CURRY POWDER.png"
     },
     {
       id: 10,
-      title: "Coriandrum Sativum",
+      title: "Garlic Powder",
       category: "Spices",
-      image: "/images/Frame 13-1.png"
+      image: "/images/GARLIC POWDER.png"
     },
     {
       id: 11,
-      title: "Flax Seeds",
+      title: "Fenugreek Seeds",
       category: "Oil Seeds",
-      image: "/images/Frame 13-2.png"
+      image: "/images/Fenugreek seeds.png"
     },
     {
       id: 12,
-      title: "Cumin Seeds",
+      title: "Onion Powder",
       category: "Spices",
-      image: "/images/Frame 13-3.png"
+      image: "/images/ONION POWDER.png"
     },
     {
       id: 13,
-      title: "Fennel Seeds",
+      title: "Red Chili Powder",
       category: "Spices",
-      image: "/images/Frame 13.png"
+      image: "/images/RED CHILI POwDER.png"
     },
     {
       id: 14,
-      title: "Coriandrum Sativum",
+      title: "Turmeric Powder",
       category: "Spices",
-      image: "/images/Frame 13-1.png"
+      image: "/images/TURMERIC POWDER.png"
     },
     {
       id: 15,
       title: "Flax Seeds",
       category: "Oil Seeds",
       image: "/images/Frame 13-2.png"
-    },
-    {
-      id: 16,
-      title: "Cumin Seeds",
-      category: "Spices",
-      image: "/images/Frame 13-3.png"
-    },
-    {
-      id: 17,
-      title: "Fennel Seeds",
-      category: "Spices",
-      image: "/images/Frame 13.png"
-    },
-    {
-      id: 18,
-      title: "Coriandrum Sativum",
-      category: "Spices",
-      image: "/images/Frame 13-1.png"
-    },
-    {
-      id: 19,
-      title: "Flax Seeds",
-      category: "Oil Seeds",
-      image: "/images/Frame 13-2.png"
-    },
-    {
-      id: 20,
-      title: "Cumin Seeds",
-      category: "Spices",
-      image: "/images/Frame 13-3.png"
-    },
-    {
-      id: 21,
-      title: "Fennel Seeds",
-      category: "Spices",
-      image: "/images/Frame 13.png"
-    },
-    {
-      id: 22,
-      title: "Coriandrum Sativum",
-      category: "Spices",
-      image: "/images/Frame 13-1.png"
-    },
-    {
-      id: 23,
-      title: "Flax Seeds",
-      category: "Oil Seeds",
-      image: "/images/Frame 13-2.png"
-    },
-    {
-      id: 24,
-      title: "Cumin Seeds",
-      category: "Spices",
-      image: "/images/Frame 13-3.png"
-    },
-    {
-      id: 25,
-      title: "Fennel Seeds",
-      category: "Spices",
-      image: "/images/Frame 13.png"
     }
   ];
 

@@ -1,7 +1,6 @@
 'use client';
 import React, { useState } from 'react';
 import './SpicesCardSection.css';
-import logo from '../images/dc_logo.svg';
 
 const SpicesCardSection = () => {
 
