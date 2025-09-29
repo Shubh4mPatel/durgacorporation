@@ -312,9 +312,9 @@
 
 /* Laptops and Standard Desktops - 1024px to 1440px */
 @media (min-width: 1024px) and (max-width: 1440px) {
-    .products-swiper {
-        /* padding: clamp(65px, 8vw, 80px) 20px clamp(18px, 2vw, 22px); */
-    }
+    /* .products-swiper {
+        padding: clamp(65px, 8vw, 80px) 20px clamp(18px, 2vw, 22px);
+    } */
 
     .product-card {
         padding: clamp(85px, 8vw, 100px) clamp(18px, 2vw, 22px) clamp(18px, 2vw, 22px);
