@@ -139,7 +139,7 @@
   /* Mobile styles */
   @media screen and (max-width: 480px) {
     .About-section {
-      padding: 1rem 0.5rem;
+      padding: 3.125rem 1rem;
     }
     
     .About-content {
@@ -147,7 +147,8 @@
     }
     
     .About-section h1 {
-      margin: 0px;
+      margin-bottom: 50px;
+      /* margin: 0px; */
       text-align: center;
       font-size: 1.8rem ;
       /* margin-bottom: 1rem; */

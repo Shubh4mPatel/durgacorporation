@@ -118,14 +118,14 @@
     }
     
     .durga-container {
-      padding: 30px 15px;
+      padding: 50px 15px;
     }
   }
   
   @media (max-width: 480px) {
     .why-main-title {
       font-size: 1.8rem;
-      margin-bottom: 80px;
+      margin-bottom: 50px;
     }
     
     .feature-title {
