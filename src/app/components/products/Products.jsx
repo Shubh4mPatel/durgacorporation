@@ -51,9 +51,9 @@ const ProductsSection = () => {
     },
     {
       id: 3,
-      title: "Cummin Seeds",
+      title: "Black Cummin Seeds",
       category: "Oil Seeds",
-      image: "/images/Frame 13-1.png"
+      image: "/images/BLACK CUMIN SEEDS.png"
     },
     {
       id: 4,
@@ -75,9 +75,9 @@ const ProductsSection = () => {
     },
     {
       id: 7,
-      title: "Flax Seeds",
+      title: "Ragi Seeds",
       category: "Oil Seeds",
-      image: "/images/Frame 13-2.png"
+      image: "/images/RAAGI SEEDS.png"
     },
     {
       id: 8,
@@ -99,9 +99,9 @@ const ProductsSection = () => {
     },
     {
       id: 11,
-      title: "Fenugreek Seeds",
+      title: "Niger Seeds",
       category: "Oil Seeds",
-      image: "/images/Fenugreek seeds.png"
+      image: "/images/NIGER SEEDS.png"
     },
     {
       id: 12,
@@ -125,8 +125,32 @@ const ProductsSection = () => {
       id: 15,
       title: "Flax Seeds",
       category: "Oil Seeds",
-      image: "/images/Frame 13-2.png"
+      image: "/images/FLAX SEEDS.png"
+    },
+    {
+      id: 16,
+      title: "Black Mustard Seeds",
+      category: "Oil Seeds",
+      image: "/images/BLACK MUSTARD SEEDS.png"
+    },
+    {
+      id: 17,
+      title: "Sesame Seeds Hulled",
+      category: "Oil Seeds",
+      image: "/images/SESAME SEEDS HULLED.png"
+    },{
+      id: 18,
+      title: "Sesame Seeds Natural",
+      category: "Oil Seeds",
+      image: "/images/SESAME SEEDS NATURAL.png"
+    },
+    ,{
+      id: 19,
+      title: "Yellow Mustard Seeds",
+      category: "Oil Seeds",
+      image: "/images/Yellow Mustard Seeds.png"
     }
+
   ];
 
   // Filter products based on active category
