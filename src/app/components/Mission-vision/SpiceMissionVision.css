@@ -1,0 +1,110 @@
+.mv-container {
+  background-color: #ECE3D4;
+  /* min-height: 100vh; */
+  padding: 60px 40px;
+  /* font-family: 'Georgia', serif; */
+}
+
+.mv-section {
+  background-image: url("/images/about_us_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 80px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mv-mission-section {
+  flex-direction: row;
+}
+.mission {
+  text-align: end;
+}
+.mv-setter {
+  display: flex;
+  max-width: 100%;
+  justify-content: end;
+}
+
+.mv-image-container {
+  flex: 0 0 auto;
+  width: 300px;
+}
+
+.mv-spice-image {
+  width: 115%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.mv-content-container {
+  flex: 1;
+  position: relative;
+}
+
+.mv-heading {
+  font-size: 40px;
+  font-weight: 400;
+  color: rgba(1, 1, 1, 1);
+  margin-bottom: 24px;
+}
+
+.mv-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgba(1, 1, 1, 1);
+  text-align: justify;
+  max-width: 500px;
+}
+
+.mv-icon-badge {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #d32f2f 0%, #c62828 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(211, 47, 47, 0.4);
+}
+
+@media (max-width: 768px) {
+  .mv-container {
+    padding: 40px 20px;
+  }
+
+  .mv-section {
+    flex-direction: column !important;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  .mv-image-container {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .mv-heading {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .mv-description {
+    font-size: 14px;
+  }
+  .mv-spice-image {
+    width: 100%;
+  }
+}
