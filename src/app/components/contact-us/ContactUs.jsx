@@ -23,7 +23,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="contact-us-container">
+    <div className="contact-us-container" id='Contact-us'>
       <div className="contact-us-content">
         <div className="contact-us-grid">
           {/* Left Side - Contact Information */}

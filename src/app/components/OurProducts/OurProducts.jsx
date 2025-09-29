@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
+import { useRouter } from "next/navigation";
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -32,6 +34,8 @@ const products = [
 const OurProducts = () => {
   const [slidesPerView, setSlidesPerView] = useState(4);
   const [dotsCount, setDotsCount] = useState(4);
+  const router = useRouter();
+
 
   // Update slides per view and dots count based on screen size
   useEffect(() => {
@@ -166,7 +170,7 @@ const OurProducts = () => {
       </div>
 
       {/* View More button */}
-      <button className="view-more">View More</button>
+      <button className="view-more" onClick={() => router.push('/products')}>View More</button>
       </div>
     </section>
   );

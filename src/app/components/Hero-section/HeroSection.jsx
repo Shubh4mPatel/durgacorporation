@@ -1,7 +1,10 @@
+'use client'
 import React from "react";
 import "./HeroSection.css";
+import { useRouter } from "next/navigation";
 
 const DurgaCorporation = ({ isButtonVisible = false }) => {
+  const router = useRouter()
   return (
     <>
       <div className="container">
@@ -21,6 +24,7 @@ const DurgaCorporation = ({ isButtonVisible = false }) => {
           <button
             className="know-more-btn"
             style={{ display: isButtonVisible === false ? "none" : "" }}
+            onClick={() => router.push('/about-us')}
           >
             Know More
           </button>
