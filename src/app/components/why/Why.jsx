@@ -10,30 +10,36 @@ const DurgaCorporation = () => {
         <div className="features-grid">
           {/* Easy Repayment Options */}
           <div className="feature-card orange">
-            <div className="icon-container">
+            {/* <div className="icon-container">
               <div className="money-icon">
                 <span className="dollar-sign">$</span>
               </div>
-            </div>
-            <h3 className="feature-title">Easy Repayment Options</h3>
+            </div> */}
+            <h3 className="feature-title">
+            Full compliance with International Food Safety Regulations
+            </h3>
             <p className="feature-description">
-              Full compliance with International Food Safety Regulations
+              adherence to global food safety standards, ensuring product quality, consumer protection, and seamless international market compliance.
             </p>
           </div>
 
           {/* Lower Interest Rates */}
           <div className="feature-card red">
-            <h3 className="feature-title">Lower Interest Rates</h3>
+            <h3 className="feature-title">
+            Processing and Quality Assurance
+            </h3>
             <p className="feature-description">
-              Processing and Quality Assurance
+              procedures ensuring product excellence through systematic testing and quality verification.Retry
             </p>
           </div>
 
           {/* Fast Processing and Disbursal */}
           <div className="feature-card green">
-            <h3 className="feature-title">Fast Processing and Disbursal</h3>
+            <h3 className="feature-title">
+            Certifications and Documentation
+            </h3>
             <p className="feature-description">
-              Certifications and Documentation
+              Official credentials and records verifying compliance, standards, and operational legitimacy.
             </p>
           </div>
 

@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h2 className="footer-title">Digiwave</h2>
+          <h2 className="footer-title">Durga Corporation</h2>
           <p className="footer-description">
             We help companies streamline their hiring process with cutting-edge interview solutions, ensuring accurate candidate assessments and efficient decision-making.
           </p>
