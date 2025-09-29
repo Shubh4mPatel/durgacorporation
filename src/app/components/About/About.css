@@ -48,11 +48,16 @@
   }
   
   .About-paragraph-container {
-    height: auto;
-    min-height: 400px;
+    max-width: 620px;
+    width: 607px;
+    background: url(/images/about_bg.png) center / 615px 840px no-repeat;
+    /* border-radius: 8px; */
+    height: 800px;
+    /* height: auto; */
+    /* min-height: 400px; */
     padding: 2rem;
-    background: url('/images/about_bg.png') no-repeat center center;
-    background-size:560px 850px;
+    /* background: url('/images/about_bg.png') no-repeat center center;
+    background-size:560px 850px; */
     border-radius: 8px;
   }
   
