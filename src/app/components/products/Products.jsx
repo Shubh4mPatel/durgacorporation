@@ -1,20 +1,34 @@
 'use client';
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import './Products.css';
+
 // Main Products Section Component
 const ProductsSection = () => {
+  const router = useRouter();
   const [activeCategory, setActiveCategory] = useState('Spices');
   const [visibleRows, setVisibleRows] = useState(2); // Start with 2 rows (8 items) for Spices
 
-
   // Product Card Component
-  const ProductCard = ({ image, title, category }) => {
+  const ProductCard = ({ image, title, category, id }) => {
+    const handleClick = () => {
+      router.push(`/products/${id}`);
+    };
+
     return (
       <div className="product-card">
         <img src={image} alt={title} />
         <div className="product-info">
           <span>{title}</span>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg 
+            width="24" 
+            height="24" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            onClick={handleClick}
+            style={{ cursor: 'pointer' }}
+          >
             <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white" />
           </svg>
         </div>
@@ -168,8 +182,10 @@ const ProductsSection = () => {
         {displayedProducts.map(product => (
           <ProductCard
             key={product.id}
+            id={product.id}
             title={product.title}
             image={product.image}
+            category={product.category}
           />
         ))}
       </div>
