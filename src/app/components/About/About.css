@@ -26,6 +26,7 @@
   }
   
   .About-content {
+    gap:10rem;
     max-width: 1650px;
     display: flex;
     align-items: center;
@@ -51,13 +52,8 @@
     max-width: 620px;
     width: 607px;
     background: url(/images/about_bg.png) center / 615px 840px no-repeat;
-    /* border-radius: 8px; */
     height: 800px;
-    /* height: auto; */
-    /* min-height: 400px; */
     padding: 2rem;
-    /* background: url('/images/about_bg.png') no-repeat center center;
-    background-size:560px 850px; */
     border-radius: 8px;
   }
   
@@ -122,7 +118,7 @@
     .About-paragraph-container {
       padding: 1.5rem;
       min-height: 350px;
-      background-size: 450px 600px;
+      background-size: 450px 675px;
     }
     
     .About-para {
@@ -150,16 +146,20 @@
       gap: 1rem;
     }
     
-    .About-text h1 {
-      font-size: 1.75rem;
+    .About-section h1 {
+      font-size: 2rem !important;
       /* margin-bottom: 1rem; */
+    }
+    .About-paragraph-container p:first-child{
+      margin-top: 3.3rem;
     }
     
     .About-paragraph-container {
-      padding: 1rem;
-      min-height: 300px;
-      /* background-size: cover; */
-      /* background-position: center; */
+      padding: 1.5rem;
+      /* min-height: 300px; */
+      max-height: 540px;
+      max-width: 380px;
+ 
     }
     
     .About-para {
@@ -188,8 +188,9 @@
     
     .About-paragraph-container {
       padding: 3rem;
+      padding-top:7rem ;
       min-height: 500px;
-      max-width: 450px;
+      max-width: 485px;
     }
     
     .About-para {

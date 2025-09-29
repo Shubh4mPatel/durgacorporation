@@ -400,6 +400,9 @@
         padding: 90px 0px 16px;
     }
 
+    .our-products h2 {
+        font-size: 1.8rem;
+    }
     .product-card {
         padding: 65px 16px 16px;
         max-width: 230px;
