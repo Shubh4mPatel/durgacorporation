@@ -424,8 +424,8 @@
   }
 
   .product-card img {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
   }
 
   .line hr {
@@ -458,8 +458,8 @@
   }
 
   .product-card img {
-    width: 80px;
-    height: 80px;
+    width: 130px;
+    height: 130px;
   }
 
   .product-info {
@@ -467,6 +467,7 @@
   }
 
   .product-info span {
+    line-height: 20px;
     font-size: 0.85rem;
   }
 
