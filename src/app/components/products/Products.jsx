@@ -18,7 +18,7 @@ const ProductsSection = () => {
     return (
       <div className="product-card">
         <img src={image} alt={title} />
-        <div className="product-info">
+        <div className="product-info" onClick={handleClick}>
           <span>{title}</span>
           <svg 
             width="24" 
