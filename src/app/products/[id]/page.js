@@ -1,6 +1,7 @@
 
 import ProductsDetails from "../../components/ProductDetails/ProductDetails";
 import products from "../../data/Products";
+import ProductHeroSection from '../../components/Producthero-section/ProductHeroSection'
 
 // Needed for static export
 export async function generateStaticParams() {
@@ -12,5 +13,6 @@ export async function generateStaticParams() {
 export default async function ProductPage({ params }) {
   const { id } = await params;
   
-  return <ProductsDetails productId={id} />;
+    
+    return <><ProductHeroSection />< ProductsDetails productId={id} />;</>
 }

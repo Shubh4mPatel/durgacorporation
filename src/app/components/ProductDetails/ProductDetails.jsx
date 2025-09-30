@@ -11,7 +11,7 @@ const ProductsDetails = ({ productId }) => {
 
   return (
     <>
-      <HeroSection />
+      {/* <HeroSection /> */}
       <div className="product-details-page">
         <div className="product-details">
           <div className="product-details-title-wrapper">
