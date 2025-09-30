@@ -33,7 +33,7 @@ const ProductsDetails = ({ productId }) => {
                       {product.botanicalName}
                     </span>
                   </div>
-                  <div className="product-details-specification-row">
+                  {/* <div className="product-details-specification-row">
                     <span className="product-details-specification-label">
                       Family :
                     </span>
@@ -48,7 +48,7 @@ const ProductsDetails = ({ productId }) => {
                     <span className="product-details-specification-value">
                       {product.commercialPart}
                     </span>
-                  </div>
+                  </div> */}
                 </div>
 
                 <h3 className="product-details-usage-title">Use</h3>
