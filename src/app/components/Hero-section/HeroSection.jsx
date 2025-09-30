@@ -23,7 +23,7 @@ const DurgaCorporation = ({ isButtonVisible = false }) => {
           </p>
           <button
             className="know-more-btn"
-            style={{ display: isButtonVisible === false ? "none" : "" }}
+            style={{ visibility: isButtonVisible === false ? "hidden" : "visible" }}
             onClick={() => router.push('/about-us')}
           >
             Know More
