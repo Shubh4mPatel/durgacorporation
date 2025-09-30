@@ -1,5 +1,6 @@
 // app/data/products.js
 const products = [
+  // Spices
   {
     id: 1,
     name: "BLACK PEPPER",
@@ -15,14 +16,6 @@ const products = [
     image: "/images/Caasia.png",
     category: "Spices",
     uses: "Used in baking, cooking, and traditional medicine. It flavors desserts, curries, and beverages. Medicinally, it helps regulate blood sugar levels, has anti-inflammatory properties, and aids digestion. Commonly used in Chinese five-spice powder."
-  },
-  {
-    id: 3,
-    name: "BLACK CUMIN SEEDS",
-    botanicalName: "Nigella Sativa",
-    image: "/images/BLACK CUMIN SEEDS.png",
-    category: "Oil Seeds",
-    uses: "Widely used in Middle Eastern, Indian, and Mediterranean cuisines for flavoring breads, curries, and pickles. Medicinally, it has powerful antioxidant and anti-inflammatory properties, supports immune function, may help lower blood sugar and cholesterol, aids digestion, and has been used in traditional medicine for centuries."
   },
   {
     id: 4,
@@ -49,14 +42,6 @@ const products = [
     uses: "Ground coriander is an herb that many associates with Mexican and Spanish foods, and also widely used in Middle Eastern and Indian cooking. It aids digestion, has anti-inflammatory properties, and helps lower blood sugar levels."
   },
   {
-    id: 7,
-    name: "RAGI SEEDS",
-    botanicalName: "Eleusine Coracana",
-    image: "/images/RAAGI SEEDS.png",
-    category: "Oil Seeds",
-    uses: "Used to make porridge, flatbreads (roti), and fermented beverages in Indian and African cuisines. Rich in calcium (excellent for bone health), iron, amino acids, and dietary fiber. Helps manage diabetes due to low glycemic index, aids weight loss, improves digestion, and is naturally gluten-free. Popular baby food due to high nutritional value."
-  },
-  {
     id: 8,
     name: "CUMIN POWDER",
     botanicalName: "Cuminum Cyminum",
@@ -81,14 +66,6 @@ const products = [
     uses: "Used as a seasoning in various cuisines worldwide, particularly in Italian, Asian, and American cooking. Added to meats, vegetables, sauces, and marinades. Medicinally, garlic supports heart health, lowers blood pressure and cholesterol, has antimicrobial and antiviral properties, and boosts immune function."
   },
   {
-    id: 11,
-    name: "NIGER SEEDS",
-    botanicalName: "Guizotia Abyssinica",
-    image: "/images/NIGER SEEDS.png",
-    category: "Oil Seeds",
-    uses: "Primarily used for extracting niger seed oil, which is used for cooking and in soap making. The oil is light-colored, odorless, and has properties similar to sunflower oil. The seed cake left after oil extraction is used as cattle feed and organic fertilizer. Also widely used as bird feed, especially for finches. Rich in linoleic acid and protein."
-  },
-  {
     id: 12,
     name: "ONION POWDER",
     botanicalName: "Allium Cepa",
@@ -100,7 +77,7 @@ const products = [
     id: 13,
     name: "RED CHILI POWDER",
     botanicalName: "Capsicum Annuum",
-    image: "/images/RED CHILI POwDER.png",
+    image: "/images/RED CHILI POWDER.png",
     category: "Spices",
     uses: "Vitamins: Chilli is loaded with vitamins like niacin, pyridoxine, riboflavin, and thiamine. Medicinal Uses: Due to presence of Capsaicin compounds, chilli pepper is used in preparation of ointment; also used in formulation to be used in arthritic pain and sore muscles."
   },
@@ -111,6 +88,32 @@ const products = [
     image: "/images/TURMERIC POWDER.png",
     category: "Spices",
     uses: "It has a warm, bitter taste and is frequently used to flavor or color curry powders, mustards, butters, and cheeses. But the root of turmeric is also used widely to make medicine. It contains a yellow-colored chemical called curcumin, which is often used to color foods and cosmetics."
+  },
+  
+  // Oil Seeds
+  {
+    id: 3,
+    name: "BLACK CUMIN SEEDS",
+    botanicalName: "Nigella Sativa",
+    image: "/images/BLACK CUMIN SEEDS.png",
+    category: "Oil Seeds",
+    uses: "Widely used in Middle Eastern, Indian, and Mediterranean cuisines for flavoring breads, curries, and pickles. Medicinally, it has powerful antioxidant and anti-inflammatory properties, supports immune function, may help lower blood sugar and cholesterol, aids digestion, and has been used in traditional medicine for centuries."
+  },
+  {
+    id: 7,
+    name: "RAGI SEEDS",
+    botanicalName: "Eleusine Coracana",
+    image: "/images/RAAGI SEEDS.png",
+    category: "Oil Seeds",
+    uses: "Used to make porridge, flatbreads (roti), and fermented beverages in Indian and African cuisines. Rich in calcium (excellent for bone health), iron, amino acids, and dietary fiber. Helps manage diabetes due to low glycemic index, aids weight loss, improves digestion, and is naturally gluten-free. Popular baby food due to high nutritional value."
+  },
+  {
+    id: 11,
+    name: "NIGER SEEDS",
+    botanicalName: "Guizotia Abyssinica",
+    image: "/images/NIGER SEEDS.png",
+    category: "Oil Seeds",
+    uses: "Primarily used for extracting niger seed oil, which is used for cooking and in soap making. The oil is light-colored, odorless, and has properties similar to sunflower oil. The seed cake left after oil extraction is used as cattle feed and organic fertilizer. Also widely used as bird feed, especially for finches. Rich in linoleic acid and protein."
   },
   {
     id: 15,
@@ -147,10 +150,92 @@ const products = [
   {
     id: 19,
     name: "YELLOW MUSTARD SEEDS",
-    botanicalName: "Sinapis Alba (or Brassica Alba)",
+    botanicalName: "Sinapis Alba",
     image: "/images/Yellow Mustard Seeds.png",
     category: "Oil Seeds",
     uses: "Primary ingredient in American yellow mustard and other mild mustard preparations. Used in pickling spices, salad dressings, mayonnaise, and European cuisine. Aids digestion, has anti-inflammatory properties, rich in omega-3 fatty acids, selenium, and magnesium. Used in traditional medicine for treating respiratory conditions and as a poultice for pain relief."
+  },
+  {
+    id: 26,
+    name: "CUMIN SEEDS",
+    botanicalName: "Cuminum Cyminum",
+    image: "/images/Cumin Seed.png",
+    category: "Oil Seeds",
+    uses: "Essential spice in Indian, Middle Eastern, Mexican, and North African cuisines. Used whole in tempering, spice blends, and as a key ingredient in curry powders and garam masala. Rich in iron, aids digestion, improves blood sugar control, has antimicrobial properties, and boosts immunity. Used medicinally for digestive disorders and respiratory issues."
+  },
+  {
+    id: 27,
+    name: "CORIANDER SEEDS",
+    botanicalName: "Coriandrum Sativum",
+    image: "/images/Coriandrum Sativum.png",
+    category: "Oil Seeds",
+    uses: "Widely used in Indian, Middle Eastern, and Latin American cuisines. Essential in curry powders, pickling spices, and spice blends. Used whole or ground in breads, soups, stews, and marinades. Medicinally, aids digestion, helps lower blood sugar levels, has anti-inflammatory and antimicrobial properties, and may support heart health. Rich in dietary fiber, antioxidants, and essential minerals."
+  },
+  {
+    id: 28,
+    name: "FENNEL SEEDS",
+    botanicalName: "Foeniculum Vulgare",
+    image: "/images/Fennel Seeds.png",
+    category: "Oil Seeds",
+    uses: "Commonly used in Indian, Mediterranean, and Middle Eastern cuisines. Used in spice blends, baking, teas, and as a mouth freshener after meals. Essential ingredient in Italian sausages and Chinese five-spice powder. Medicinally, aids digestion, relieves bloating and gas, has anti-inflammatory properties, freshens breath, and may help with menstrual discomfort. Rich in fiber, antioxidants, vitamin C, and minerals."
+  },
+  
+  // Others
+  {
+    id: 20,
+    name: "PSYLLIUM HUSK",
+    botanicalName: "Plantago Ovata",
+    image: "/images/Psyllium Husk.png",
+    category: "Others",
+    uses: "Primarily used as a dietary fiber supplement for digestive health. Helps relieve constipation, diarrhea, and irritable bowel syndrome. Used in gluten-free baking as a binding agent. Aids in weight management by promoting feelings of fullness, helps lower cholesterol levels, and supports blood sugar control. Can be mixed with water, juices, or added to smoothies and baked goods."
+  },
+  {
+    id: 21,
+    name: "MILLET",
+    botanicalName: "Panicum Miliaceum",
+    image: "/images/Millet.png",
+    category: "Others",
+    uses: "Ancient grain used to make porridge, flatbreads, couscous alternatives, and fermented beverages in African and Asian cuisines. Naturally gluten-free and highly nutritious. Rich in protein, fiber, B vitamins, iron, magnesium, and phosphorus. Helps manage diabetes due to low glycemic index, supports heart health, aids digestion, and promotes weight management. Used in birdseed and animal feed as well."
+  },
+  {
+    id: 22,
+    name: "MAIZE STARCH",
+    botanicalName: "Zea Mays",
+    image: "/images/Maize Starch.png",
+    category: "Others",
+    uses: "Widely used as a thickening agent in soups, sauces, gravies, and desserts. Essential in baking for texture improvement and as a coating for fried foods. Used in food processing, pharmaceuticals, paper manufacturing, and textile industries. Gluten-free alternative in cooking. Also used in cosmetics and as a binding agent in various products. Provides quick energy and is easily digestible."
+  },
+  {
+    id: 23,
+    name: "DRY COCONUT",
+    botanicalName: "Cocos Nucifera",
+    image: "/images/Dry Coconut.png",
+    category: "Others",
+    uses: "Used in South Asian, Southeast Asian, and tropical cuisines for cooking curries, desserts, and chutneys. Grated dry coconut is used in sweets, snacks, and as a garnish. Rich in healthy fats (MCTs), fiber, iron, and manganese. Provides quick energy, supports brain function, has antimicrobial properties, and aids in weight management. Used in cosmetics and traditional medicine for hair and skin care."
+  },
+  {
+    id: 24,
+    name: "CHICKPEAS",
+    botanicalName: "Cicer Arietinum",
+    image: "/images/Chickpeas.png",
+    category: "Others",
+    uses: "Versatile legume used in Mediterranean, Middle Eastern, Indian, and global cuisines. Key ingredient in hummus, falafel, curries, soups, and salads. Can be roasted as snacks or ground into chickpea flour (besan) for baking and cooking. Excellent source of plant-based protein, fiber, iron, folate, and phosphorus. Helps manage blood sugar, supports digestive health, aids weight management, and promotes heart health."
+  },
+  {
+    id: 25,
+    name: "BROWN CHICKPEAS",
+    botanicalName: "Cicer Arietinum",
+    image: "/images/Brown Chickpeas.png",
+    category: "Others",
+    uses: "Popular in Indian cuisine, especially for making chana masala, curries, and street food snacks. Smaller and darker than regular chickpeas with a nuttier, earthier flavor. Used in salads, soups, and sprouted for nutritional benefits. Rich in protein, fiber, iron, and folate. Supports digestive health, helps regulate blood sugar levels, promotes heart health, and aids in weight management. Excellent source of plant-based nutrition for vegetarian and vegan diets."
+  },
+  {
+    id: 29,
+    name: "GROUND NUT SEEDS",
+    botanicalName: "Arachis Hypogaea",
+    image: "/images/ground nut seeds.png",
+    category: "Oil Seeds",
+    uses: "Widely used globally for extracting peanut oil, which is excellent for cooking, frying, and salad dressings. Consumed roasted, boiled, or raw as nutritious snacks. Key ingredient in peanut butter, confectioneries, and savory dishes across Asian, African, and American cuisines. Rich in protein, healthy monounsaturated fats, vitamin E, niacin, folate, and magnesium. Supports heart health, aids weight management, helps regulate blood sugar levels, and provides sustained energy. Also used in animal feed and as a nitrogen-fixing crop to improve soil fertility."
   }
 ];
 

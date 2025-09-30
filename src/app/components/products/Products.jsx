@@ -35,8 +35,8 @@ const ProductsSection = () => {
       </div>
     );
   };
-
   const products = [
+    // Spices
     {
       id: 1,
       title: "Black Pepper",
@@ -48,12 +48,6 @@ const ProductsSection = () => {
       title: "Caasia",
       category: "Spices",
       image: "/images/Caasia.png"
-    },
-    {
-      id: 3,
-      title: "Black Cummin Seeds",
-      category: "Oil Seeds",
-      image: "/images/BLACK CUMIN SEEDS.png"
     },
     {
       id: 4,
@@ -74,12 +68,6 @@ const ProductsSection = () => {
       image: "/images/CORIANDER POWDER.png"
     },
     {
-      id: 7,
-      title: "Ragi Seeds",
-      category: "Oil Seeds",
-      image: "/images/RAAGI SEEDS.png"
-    },
-    {
       id: 8,
       title: "Cumin Powder",
       category: "Spices",
@@ -96,12 +84,6 @@ const ProductsSection = () => {
       title: "Garlic Powder",
       category: "Spices",
       image: "/images/GARLIC POWDER.png"
-    },
-    {
-      id: 11,
-      title: "Niger Seeds",
-      category: "Oil Seeds",
-      image: "/images/NIGER SEEDS.png"
     },
     {
       id: 12,
@@ -121,6 +103,25 @@ const ProductsSection = () => {
       category: "Spices",
       image: "/images/TURMERIC POWDER.png"
     },
+    // Oil Seeds
+    {
+      id: 3,
+      title: "Black Cumin Seeds",
+      category: "Oil Seeds",
+      image: "/images/BLACK CUMIN SEEDS.png"
+    },
+    {
+      id: 7,
+      title: "Ragi Seeds",
+      category: "Oil Seeds",
+      image: "/images/RAAGI SEEDS.png"
+    },
+    {
+      id: 11,
+      title: "Niger Seeds",
+      category: "Oil Seeds",
+      image: "/images/NIGER SEEDS.png"
+    },
     {
       id: 15,
       title: "Flax Seeds",
@@ -138,19 +139,81 @@ const ProductsSection = () => {
       title: "Sesame Seeds Hulled",
       category: "Oil Seeds",
       image: "/images/SESAME SEEDS HULLED.png"
-    },{
+    },
+    {
       id: 18,
       title: "Sesame Seeds Natural",
       category: "Oil Seeds",
       image: "/images/SESAME SEEDS NATURAL.png"
     },
-    ,{
+    {
       id: 19,
       title: "Yellow Mustard Seeds",
       category: "Oil Seeds",
       image: "/images/Yellow Mustard Seeds.png"
+    },
+    {
+      id: 26,
+      title: "Cumin Seeds",
+      category: "Oil Seeds",
+      image: "/images/Cumin Seed.png"
+    },
+    {
+      id: 27,
+      title: "Coriandrum Sativum",
+      category: "Oil Seeds",
+      image: "/images/Coriandrum Sativum.png"
+    },
+    {
+      id: 28,
+      title: "Fennel Seeds",
+      category: "Oil Seeds",
+      image: "/images/Fennel Seeds.png"
+    },
+    {
+      id: 29,
+      title: "Ground Nut Seeds",
+      category: "Oil Seeds",
+      image: "/images/ground nut seeds.png"
+    },
+    
+    // Others
+    {
+      id: 20,
+      title: "Psyllium Husk",
+      category: "Others",
+      image: "/images/Psyllium Husk.png"
+    },
+    {
+      id: 21,
+      title: "Millet",
+      category: "Others",
+      image: "/images/Millet.png"
+    },
+    {
+      id: 22,
+      title: "Maize Starch",
+      category: "Others",
+      image: "/images/Maize Starch.png"
+    },
+    {
+      id: 23,
+      title: "Dry Coconut",
+      category: "Others",
+      image: "/images/Dry Coconut.png"
+    },
+    {
+      id: 24,
+      title: "Chickpeas",
+      category: "Others",
+      image: "/images/Chickpeas.png"
+    },
+    {
+      id: 25,
+      title: "Brown Chickpeas",
+      category: "Others",
+      image: "/images/Brown Chickpeas.png"
     }
-
   ];
 
   // Filter products based on active category
@@ -194,6 +257,12 @@ const ProductsSection = () => {
             onClick={() => handleCategoryChange('Oil Seeds')}
           >
             Oil Seeds
+          </button>
+          <button
+            className={`tab ${activeCategory === 'Others' ? 'active' : ''}`}
+            onClick={() => handleCategoryChange('Others')}
+          >
+            Others
           </button>
         </div>
       </div>
