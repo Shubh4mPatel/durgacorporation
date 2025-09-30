@@ -122,7 +122,7 @@ const ContactUs = () => {
                   />
                 </svg>
               </div>
-              <span>info@durgacorporation.com</span>
+              <span>durgacorporation21@gmail.com</span>
             </div>
 
             <div className="contact-item">
@@ -141,11 +141,11 @@ const ContactUs = () => {
                 </svg>
               </div>
               <div className="contact-address">
-                <div>Durga Corporation is a manufacturer and</div>
-                <div>exporter of spices and herbs from Patan (NG),</div>
-                <div>ndia. Tapping into Patan, just 30km from</div>
-                <div>Unjha, which is renowned as Asia's biggest</div>
-                <div>spice market</div>
+                <div>Reg. Office I MFG. UNIT</div>
+                <div>Plot survey No. 272, Rajpur-</div>
+                <div>Katpur road, Rajpur</div>
+                <div>Dist- Patan, Gujarat- 384265,</div>
+                <div>INDIA.</div>
               </div>
             </div>
           </div>

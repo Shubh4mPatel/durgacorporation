@@ -9,9 +9,11 @@ const Footer = () => {
         <div className="footer-section">
           <h2 className="footer-title">Durga Corporation</h2>
           <p className="footer-description">
-            We help companies streamline their hiring process with cutting-edge
-            interview solutions, ensuring accurate candidate assessments and
-            efficient decision-making.
+            Durga Corporation is a manufacturer and
+            exporter of spices and herbs from Patan (NG),
+            ndia. Tapping into Patan, just 30km from
+            Unjha, which is renowned as Asia's biggest
+            spice market
           </p>
           <div className="social-links">
             <a href="#" className="social-link youtube">
@@ -50,11 +52,11 @@ const Footer = () => {
         <div className="footer-section">
           <h3 className="footer-section-title">Quick Links</h3>
           <ul className="footer-links">
-            
+
             <li>
-            <Link href="/home" className="footer-link">
-              Home
-            </Link>
+              <Link href="/home" className="footer-link">
+                Home
+              </Link>
             </li>
             <li>
               <Link href="/about-us" className="footer-link">
