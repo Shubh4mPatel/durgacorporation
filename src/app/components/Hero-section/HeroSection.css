@@ -1,6 +1,7 @@
 
 .container {
     color: white;
+    height: 950px;
     background-image: url('/images/hero_section_bg.jpg');
     background-size: cover;
     background-position: center;
