@@ -70,7 +70,8 @@ const ContactUs = () => {
           <div className="contact-info">
             <h1 className="contact-title">Contact Us</h1>
 
-            <div className="contact-item">
+            <div className="contact-item" id="contact-phone-numbers">
+              <div className="contact-numbers-set">
               <div className="contact-icon">
                 <svg
                   width="24"
@@ -86,6 +87,8 @@ const ContactUs = () => {
                 </svg>
               </div>
               <span>+91 9537575774</span>
+              </div>
+              <div className="contact-numbers-set">
                <div className="contact-icon">
                 <svg
                   width="24"
@@ -101,6 +104,7 @@ const ContactUs = () => {
                 </svg>
               </div>
               <span>+91 9924290927</span>
+              </div>
             </div>
 
             <div className="contact-item">
