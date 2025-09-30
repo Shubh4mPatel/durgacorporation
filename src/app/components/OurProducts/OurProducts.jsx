@@ -14,77 +14,77 @@ import './OurProducts.css';
 
 const products = [
   {
-    id: 2,
-    title: "Caasia",
+    id: 17,
+    title: "Sesame Seeds Hulled",
+    category: "Oil Seeds",
+    image: "/images/SESAME SEEDS HULLED.png"
+  },
+  {
+    id: 9,
+    title: "Curry Powder",
     category: "Spices",
-    image: "/images/Caasia.png"
+    image: "/images/CURRY POWDER.png"
+  },
+  {
+    id: 24,
+    title: "Chickpeas",
+    category: "Others",
+    image: "/images/Chickpeas.png"
+  },
+  {
+    id: 1,
+    title: "Black Pepper",
+    category: "Spices",
+    image: "/images/Black Pepper.png"
+  },
+  {
+    id: 26,
+    title: "Cumin Seeds",
+    category: "Oil Seeds",
+    image: "/images/Cumin Seed.png"
+  },
+  {
+    id: 20,
+    title: "Psyllium Husk",
+    category: "Others",
+    image: "/images/Psyllium Husk.png"
+  },
+  {
+    id: 14,
+    title: "Turmeric Powder",
+    category: "Spices",
+    image: "/images/TURMERIC POWDER.png"
   },
   {
     id: 3,
-    title: "Black Cummin Seeds",
+    title: "Black Cumin Seeds",
     category: "Oil Seeds",
     image: "/images/BLACK CUMIN SEEDS.png"
   },
   {
-    id: 4,
-    title: "Chilli Flakes",
-    category: "Spices",
-    image: "/images/CHILLI FLAKES.png"
+    id: 23,
+    title: "Dry Coconut",
+    category: "Others",
+    image: "/images/Dry Coconut.png"
   },
   {
-    id: 6,
-    title: "Coriander Powder",
+    id: 5,
+    title: "Cloves",
     category: "Spices",
-    image: "/images/CORIANDER POWDER.png"
+    image: "/images/Clove.png"
   },
   {
-    id: 7,
-    title: "Ragi Seeds",
+    id: 15,
+    title: "Flax Seeds",
     category: "Oil Seeds",
-    image: "/images/RAAGI SEEDS.png"
+    image: "/images/FLAX SEEDS.png"
   },
   {
-    id: 8,
-    title: "Cumin Powder",
-    category: "Spices",
-    image: "/images/CUMIN POWDER.png"
-  },
-  {
-    id: 10,
-    title: "Garlic Powder",
-    category: "Spices",
-    image: "/images/GARLIC POWDER.png"
-  },
-  {
-    id: 11,
-    title: "Niger Seeds",
-    category: "Oil Seeds",
-    image: "/images/NIGER SEEDS.png"
-  },
-  {
-    id: 12,
-    title: "Onion Powder",
-    category: "Spices",
-    image: "/images/ONION POWDER.png"
-  },
-   {
-      id: 13,
-      title: "Red Chili Powder",
-      category: "Spices",
-      image: "/images/RED CHILI POWDER.png"
-    },
-    {
-      id: 14,
-      title: "Turmeric Powder",
-      category: "Spices",
-      image: "/images/TURMERIC POWDER.png"
-    },
-    {
-      id: 15,
-      title: "Flax Seeds",
-      category: "Oil Seeds",
-      image: "/images/FLAX SEEDS.png"
-    },
+    id: 21,
+    title: "Millet",
+    category: "Others",
+    image: "/images/Millet.png"
+  }
 ];
 
 const OurProducts = () => {
