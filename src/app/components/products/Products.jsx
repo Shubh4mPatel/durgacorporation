@@ -113,7 +113,7 @@ const ProductsSection = () => {
       id: 13,
       title: "Red Chili Powder",
       category: "Spices",
-      image: "/images/RED CHILI POwDER.png"
+      image: "/images/RED CHILI POWDER.png"
     },
     {
       id: 14,
