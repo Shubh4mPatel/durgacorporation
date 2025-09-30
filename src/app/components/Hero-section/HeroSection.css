@@ -2,7 +2,7 @@
 .container {
     color: white;
     height: 950px;
-    background-image: url('/images/hero_section_bg.jpg');
+    background-image: url('/images/hero_section_bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
+    /* background: rgba(0, 0, 0, 0.4); */
     z-index: 1;
 }
 
