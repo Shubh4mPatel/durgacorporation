@@ -65,7 +65,7 @@
 }
 
 .product-details-main-image {
-
+  margin: 15px;
   height: 540px;
   width: 540px;
 }
