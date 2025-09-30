@@ -68,12 +68,12 @@ const ProductsDetails = ({ productId }) => {
                 </button>
               </div>
             </div>
-            <div className="product-details-description-section">
+            {/* <div className="product-details-description-section">
               <h3 className="product-details-description-title">Description</h3>
               <p className="product-details-description-text">
                 {product.description}
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
