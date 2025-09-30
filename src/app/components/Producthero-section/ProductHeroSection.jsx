@@ -9,7 +9,7 @@ const DurgaCorporation = ({ isButtonVisible = false }) => {
     <>
       <div className="product-container">
         <div className="product-content">
-          <h1 className="product-main-title">More About Durga Corporation</h1>
+          <h1 className="product-main-title">Our Product Range</h1>
           <p className="product-description">
            From the earthy warmth of cumin to the vibrant zest of turmeric, our carefully selected spices are packed with freshness, aroma, and flavor.
           </p>
