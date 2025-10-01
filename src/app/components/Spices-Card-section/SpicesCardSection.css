@@ -88,9 +88,9 @@
 
 /* Small Mobile */
 @media screen and (max-width: 480px) {
-  .spice-cards-container {
+  /* .spice-cards-container {
     padding: 20px 10px;
-  }
+  } */
 
   .spice-card-title {
     font-size: 18px;

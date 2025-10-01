@@ -84,9 +84,11 @@
   .mv-container {
     padding: 40px 20px;
   }
-
+.mv-mission-section{
+    flex-direction: column-reverse !important;
+}
   .mv-section {
-    flex-direction: column !important;
+    flex-direction: column ;
     gap: 40px;
     margin-bottom: 60px;
   }
