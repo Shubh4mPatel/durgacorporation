@@ -184,6 +184,7 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  
   .contact-us-container {
     padding: 1rem;
   }
@@ -227,6 +228,9 @@ textarea {
 }
 
 @media (max-width: 480px) {
+  .contact-numbers-set{
+    display: none;
+  }
   .contact-us-container {
     padding: 1rem;
   }

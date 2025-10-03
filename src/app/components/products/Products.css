@@ -393,7 +393,7 @@
 /* Small mobiles (≤480px) */
 @media (max-width: 480px) {
   .category-tabs {
-    flex-direction: column;
+    margin: 0px;
     align-items: center;
     gap: 8px;
     max-width: 280px;
