@@ -84,6 +84,11 @@ const Footer = () => {
                 Spices
               </Link>
             </li>
+            <li>
+            <Link href="/products" className="footer-link">
+                Others
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
