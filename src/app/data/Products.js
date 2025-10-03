@@ -89,7 +89,7 @@ const products = [
     category: "Spices",
     uses: "It has a warm, bitter taste and is frequently used to flavor or color curry powders, mustards, butters, and cheeses. But the root of turmeric is also used widely to make medicine. It contains a yellow-colored chemical called curcumin, which is often used to color foods and cosmetics."
   },
-  
+
   // Oil Seeds
   {
     id: 3,
@@ -179,7 +179,71 @@ const products = [
     category: "Oil Seeds",
     uses: "Commonly used in Indian, Mediterranean, and Middle Eastern cuisines. Used in spice blends, baking, teas, and as a mouth freshener after meals. Essential ingredient in Italian sausages and Chinese five-spice powder. Medicinally, aids digestion, relieves bloating and gas, has anti-inflammatory properties, freshens breath, and may help with menstrual discomfort. Rich in fiber, antioxidants, vitamin C, and minerals."
   },
-  
+  {
+    id: 29,
+    name: "GROUND NUT SEEDS",
+    botanicalName: "Arachis Hypogaea",
+    image: "/images/ground nut seeds.png",
+    category: "Oil Seeds",
+    uses: "Widely used globally for extracting peanut oil, which is excellent for cooking, frying, and salad dressings. Consumed roasted, boiled, or raw as nutritious snacks. Key ingredient in peanut butter, confectioneries, and savory dishes across Asian, African, and American cuisines. Rich in protein, healthy monounsaturated fats, vitamin E, niacin, folate, and magnesium. Supports heart health, aids weight management, helps regulate blood sugar levels, and provides sustained energy. Also used in animal feed and as a nitrogen-fixing crop to improve soil fertility."
+  },
+  {
+    id: 30,
+    name: "BLANCHED GROUNDNUTS",
+    botanicalName: "Arachis Hypogaea",
+    image: "/images/Blanched Groundnuts.jpg",
+    category: "Oil Seeds",
+    uses: "Blanched peanuts with skins removed, commonly used in confectioneries, peanut butter manufacturing, baking, and Asian cuisine. Popular in trail mixes, chocolates, and as roasted snacks. Easier to digest than raw peanuts and preferred for their smooth texture. Rich in protein, healthy fats, vitamin E, niacin, and folate. Supports heart health, provides sustained energy, aids muscle building, and helps manage blood sugar levels. Used extensively in food processing and as premium snacking nuts."
+  },
+  {
+    id: 31,
+    name: "CAROM SEEDS",
+    botanicalName: "Trachyspermum Ammi",
+    image: "/images/Carom Seeds.jpg",
+    category: "Oil Seeds",
+    uses: "Also known as ajwain, widely used in Indian and Middle Eastern cuisines. Essential in Indian bread-making (parathas, puris), pickles, and savory snacks. Used for tempering in lentil dishes and vegetable preparations. Medicinally, highly valued for digestive properties - relieves indigestion, bloating, and gas. Has antimicrobial and anti-inflammatory properties, helps with respiratory issues, and may aid in weight loss. Rich in thymol, which provides its distinctive aroma and therapeutic benefits. Often consumed with water for instant relief from stomach ailments."
+  },
+  {
+    id: 32,
+    name: "DILL SEEDS",
+    botanicalName: "Anethum Graveolens",
+    image: "/images/Dill Seeds.jpg",
+    category: "Oil Seeds",
+    uses: "Extensively used in European, Scandinavian, and Middle Eastern cuisines. Essential ingredient in pickling spices, particularly for dill pickles. Used in breads, soups, fish dishes, potato salads, and sauerkraut. Popular in Indian cuisine for flavoring rice dishes and curries. Medicinally, aids digestion, relieves gas and bloating, has antimicrobial properties, and may help with insomnia. Rich in calcium, iron, and manganese. Used as a natural remedy for colic in infants and supports bone health. Has a distinctive aromatic flavor similar to caraway."
+  }, 
+  {
+    id: 33,
+    name: "GARLIC FLAKES",
+    botanicalName: "Allium Sativum",
+    image: "/images/Garlic Flakes.jpg",
+    category: "Others",
+    uses: "Dehydrated garlic slices used as a convenient alternative to fresh garlic in cooking. Popular in soups, stews, sauces, marinades, pasta dishes, and pizza toppings. Used extensively in food processing, seasoning blends, and instant meal preparations. Retains most of the nutritional benefits of fresh garlic. Supports cardiovascular health, has antimicrobial and antiviral properties, boosts immune system, and may help lower blood pressure and cholesterol. Rich in allicin, vitamins C and B6, and manganese. Offers longer shelf life and easy storage compared to fresh garlic."
+  },
+  {
+    id: 34,
+    name: "ONION FLAKES",
+    botanicalName: "Allium Cepa",
+    image: "/images/Onion Flakes.jpg",
+    category: "Others",
+    uses: "Dehydrated onion pieces used as a convenient substitute for fresh onions in cooking. Widely used in soups, stews, casseroles, dips, sauces, and dry seasoning mixes. Popular in camping and emergency food supplies due to long shelf life. Used in food processing, instant meals, and restaurant preparations. Provides onion flavor without the need for peeling, chopping, or tears. Contains antioxidants, supports heart health, has anti-inflammatory properties, and provides vitamins C and B6. Can be rehydrated or used directly in cooking. More concentrated flavor than fresh onions."
+  },
+  {
+    id: 35,
+    name: "QUINOA SEEDS",
+    botanicalName: "Chenopodium Quinoa",
+    image: "/images/Quinoa Seeds.jpg",
+    category: "Others",
+    uses: "Ancient pseudo-grain native to South America, now popular worldwide as a superfood. Used as a rice alternative, in salads, bowls, breakfast porridge, baking, and as flour. Naturally gluten-free and suitable for celiac diets. Complete protein containing all nine essential amino acids - rare for plant foods. Rich in fiber, iron, magnesium, manganese, phosphorus, and B vitamins. Supports weight management, blood sugar control, heart health, and digestive health. Has a nutty flavor and fluffy texture when cooked. Popular in vegetarian, vegan, and health-conscious diets."
+  },
+  {
+    id: 36,
+    name: "WHOLE RED CHILLIES",
+    botanicalName: "Capsicum Annuum",
+    image: "/images/Whole Red Chillies.jpg",
+    category: "Spices",
+    uses: "Dried whole red chillies used extensively in Indian, Mexican, Thai, Chinese, and Korean cuisines. Essential for making chili powders, hot sauces, curries, and spicy dishes. Used whole in tempering (tadka), stir-fries, and pickling. Can be rehydrated for sauces or ground into flakes and powder. Rich in capsaicin, which provides heat and therapeutic properties. High in vitamins A, C, and E. Boosts metabolism, aids weight loss, has pain-relief properties, improves circulation, and supports immune function. Used in traditional medicine for arthritis and muscle pain. Adds both heat and depth of flavor to dishes."
+  },
+
   // Others
   {
     id: 20,
@@ -229,14 +293,6 @@ const products = [
     category: "Others",
     uses: "Popular in Indian cuisine, especially for making chana masala, curries, and street food snacks. Smaller and darker than regular chickpeas with a nuttier, earthier flavor. Used in salads, soups, and sprouted for nutritional benefits. Rich in protein, fiber, iron, and folate. Supports digestive health, helps regulate blood sugar levels, promotes heart health, and aids in weight management. Excellent source of plant-based nutrition for vegetarian and vegan diets."
   },
-  {
-    id: 29,
-    name: "GROUND NUT SEEDS",
-    botanicalName: "Arachis Hypogaea",
-    image: "/images/ground nut seeds.png",
-    category: "Oil Seeds",
-    uses: "Widely used globally for extracting peanut oil, which is excellent for cooking, frying, and salad dressings. Consumed roasted, boiled, or raw as nutritious snacks. Key ingredient in peanut butter, confectioneries, and savory dishes across Asian, African, and American cuisines. Rich in protein, healthy monounsaturated fats, vitamin E, niacin, folate, and magnesium. Supports heart health, aids weight management, helps regulate blood sugar levels, and provides sustained energy. Also used in animal feed and as a nitrogen-fixing crop to improve soil fertility."
-  }
 ];
 
 export default products;

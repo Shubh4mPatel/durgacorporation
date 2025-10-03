@@ -103,6 +103,12 @@ const ProductsSection = () => {
       category: "Spices",
       image: "/images/TURMERIC POWDER.png"
     },
+    {
+      id: 36,
+      title: "Whole Red Chillies",
+      category: "Spices",
+      image: "/images/Whole Red Chillies.jpg"
+    },
     // Oil Seeds
     {
       id: 3,
@@ -160,7 +166,7 @@ const ProductsSection = () => {
     },
     {
       id: 27,
-      title: "Coriandrum Sativum",
+      title: "Coriander Seeds",
       category: "Oil Seeds",
       image: "/images/Coriandrum Sativum.png"
     },
@@ -175,6 +181,24 @@ const ProductsSection = () => {
       title: "Ground Nut Seeds",
       category: "Oil Seeds",
       image: "/images/ground nut seeds.png"
+    },
+    {
+      id: 30,
+      title: "Blanched Groundnuts",
+      category: "Oil Seeds",
+      image: "/images/Blanched Groundnuts.jpg"
+    },
+    {
+      id: 31,
+      title: "Carom Seeds",
+      category: "Oil Seeds",
+      image: "/images/Carom Seeds.jpg"
+    },
+    {
+      id: 32,
+      title: "Dill Seeds",
+      category: "Oil Seeds",
+      image: "/images/Dill Seeds.jpg"
     },
     
     // Others
@@ -213,6 +237,24 @@ const ProductsSection = () => {
       title: "Brown Chickpeas",
       category: "Others",
       image: "/images/Brown Chickpeas.png"
+    },
+    {
+      id: 33,
+      title: "Garlic Flakes",
+      category: "Others",
+      image: "/images/Garlic Flakes.jpg"
+    },
+    {
+      id: 34,
+      title: "Onion Flakes",
+      category: "Others",
+      image: "/images/Onion Flakes.jpg"
+    },
+    {
+      id: 35,
+      title: "Quinoa Seeds",
+      category: "Others",
+      image: "/images/Quinoa Seeds.jpg"
     }
   ];
 
