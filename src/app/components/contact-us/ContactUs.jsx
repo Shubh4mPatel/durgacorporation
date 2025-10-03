@@ -141,11 +141,11 @@ const ContactUs = () => {
                 </svg>
               </div>
               <div className="contact-address">
-                <div>Reg. Office I MFG. UNIT</div>
-                <div>Plot survey No. 272, Rajpur-</div>
-                <div>Katpur road, Rajpur</div>
-                <div>Dist- Patan, Gujarat- 384265,</div>
-                <div>INDIA.</div>
+                <div>Durga Corporation,</div>
+                <div>25/21, APMC market yard,</div>
+                <div>Patan</div>
+                {/* <div>Dist- Patan, Gujarat- 384265,</div>
+                <div>INDIA.</div> */}
               </div>
             </div>
           </div>

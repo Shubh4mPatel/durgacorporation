@@ -14,76 +14,104 @@ import './OurProducts.css';
 
 const products = [
   {
-    id: 17,
-    title: "Sesame Seeds Hulled",
-    category: "Oil Seeds",
-    image: "/images/SESAME SEEDS HULLED.png"
-  },
-  {
-    id: 9,
-    title: "Curry Powder",
-    category: "Spices",
-    image: "/images/CURRY POWDER.png"
-  },
-  {
-    id: 24,
-    title: "Chickpeas",
-    category: "Others",
-    image: "/images/Chickpeas.png"
-  },
-  {
-    id: 1,
-    title: "Black Pepper",
-    category: "Spices",
-    image: "/images/Black Pepper.png"
-  },
-  {
     id: 26,
     title: "Cumin Seeds",
     category: "Oil Seeds",
-    image: "/images/Cumin Seed.png"
+    image: "/images/Cumin Seed.jpg"
   },
   {
-    id: 20,
-    title: "Psyllium Husk",
-    category: "Others",
-    image: "/images/Psyllium Husk.png"
+    id: 28,
+    title: "Fennel Seeds",
+    category: "Oil Seeds",
+    image: "/images/Fennel Seeds.jpg"
+  },
+  {
+    id: 27,
+    title: "Coriander Seeds",
+    category: "Oil Seeds",
+    image: "/images/Coriandrum Sativum.jpg"
   },
   {
     id: 14,
     title: "Turmeric Powder",
     category: "Spices",
-    image: "/images/TURMERIC POWDER.png"
+    image: "/images/TURMERIC POWDER.jpg"
   },
+  // KALONJI - Not found in your data
   {
-    id: 3,
-    title: "Black Cumin Seeds",
+    id: 31,
+    title: "Carom Seeds",
     category: "Oil Seeds",
-    image: "/images/BLACK CUMIN SEEDS.png"
+    image: "/images/Carom Seeds.jpg"
   },
   {
-    id: 23,
-    title: "Dry Coconut",
+    id: 34,
+    title: "Onion Flakes",
     category: "Others",
-    image: "/images/Dry Coconut.png"
+    image: "/images/Onion Flakes.jpg"
   },
   {
-    id: 5,
-    title: "Cloves",
+    id: 16,
+    title: "Black Mustard Seeds",
+    category: "Oil Seeds",
+    image: "/images/BLACK MUSTARD SEEDS.jpg"
+  },
+  {
+    id: 19,
+    title: "Yellow Mustard Seeds",
+    category: "Oil Seeds",
+    image: "/images/Yellow Mustard Seeds.jpg"
+  },
+  {
+    id: 30,
+    title: "Blanched Groundnuts",
+    category: "Oil Seeds",
+    image: "/images/Blanched Groundnuts.jpg"
+  },
+  {
+    id: 32,
+    title: "Dill Seeds",
+    category: "Oil Seeds",
+    image: "/images/Dill Seeds.jpg"
+  },
+  // CHILLI POWDER - matches Red Chili Powder
+  {
+    id: 13,
+    title: "Red Chili Powder",
     category: "Spices",
-    image: "/images/Clove.png"
+    image: "/images/RED CHILI POWDER.jpg"
   },
+  // PEANUT - matches Ground Nut Seeds
   {
-    id: 15,
-    title: "Flax Seeds",
+    id: 29,
+    title: "Ground Nut Seeds",
     category: "Oil Seeds",
-    image: "/images/FLAX SEEDS.png"
+    image: "/images/ground nut seeds.jpg"
+  },
+  // FENUGREEK SEEDS - Not found in your data
+  {
+    id: 35,
+    title: "Quinoa",
+    category: "Others",
+    image: "/images/Quinoa Seeds.jpg"
   },
   {
-    id: 21,
-    title: "Millet",
+    id: 17,
+    title: "Sesame Seeds Hulled",
+    category: "Oil Seeds",
+    image: "/images/SESAME SEEDS HULLED.jpg"
+  },
+  {
+    id: 36,
+    title: "Whole Red Chillies",
+    category: "Spices",
+    image: "/images/Whole Red Chillies.jpg"
+  },
+  {
+    id: 33,
+    title: "Garlic Flakes",
     category: "Others",
-    image: "/images/Millet.png"
+    image: "/images/Garlic Flakes.jpg"
   }
 ];
 
