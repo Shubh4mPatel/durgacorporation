@@ -94,8 +94,26 @@
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding: 1.5rem 4rem;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
   margin-top: auto;
+}
+.spacer {
+  flex: 1;
+}
+
+.copyright {
+  flex: 1;
+  text-align: center;
+}
+
+.developer {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  flex: 1;
+  text-align: right;
 }
 
 .copyright {
@@ -157,7 +175,19 @@
   .footer-title {
     font-size: 1.5rem;
   }
-
+  .spacer {
+    display: none;
+    /* flex: 1; */
+  }
+  .footer-bottom {
+    flex-direction: column;
+    display: flex;
+    
+  }
+  .developer {
+    
+    text-align: center;
+  }
   .footer-bottom {
     padding: 1rem;
   }

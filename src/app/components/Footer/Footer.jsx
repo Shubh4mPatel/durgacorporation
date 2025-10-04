@@ -94,8 +94,13 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
+
+        <p className="spacer"></p>
         <p className="copyright">
           ©Durga Corporation 2025. All rights reserved
+        </p>
+        <p className="developer">
+          developed by digicley
         </p>
       </div>
     </footer>
