@@ -28,16 +28,16 @@ const ContactUs = () => {
     try {
       // EmailJS configuration
       const emailjsConfig = {
-        serviceId: 'service_zgfg3yn',
-        templateId: 'template_glmfgaj',
-        publicKey: 'feS5Orqc4V-zhCBUF'
+        serviceId: 'service_2t6qnud',
+        templateId: 'template_cwtu9mh',
+        publicKey: 'pdyOJeG5ff8C3uqTN'
       };
 
       // Prepare template parameters for EmailJS
       const templateParams = {
         from_name: formData.name.trim(),
         from_email: formData.email.trim(),
-        phone: formData.phone.trim(),
+        from_phone: formData.phone.trim(),
         message: formData.message.trim(),
         submission_date: new Date().toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' }),
         submission_time: new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', hour12: true }),
