@@ -2,6 +2,7 @@
 
 # dependencies
 /dist
+/vs
 /node_modules
 /.pnp
 .pnp.*
