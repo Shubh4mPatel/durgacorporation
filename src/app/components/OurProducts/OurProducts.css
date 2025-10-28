@@ -125,7 +125,7 @@
 }
 
 .product-card>img {
-    border-radius: 8px;
+    /* border-radius: 8px; */
     object-fit: cover;
     position: absolute;
     left: 50%;
