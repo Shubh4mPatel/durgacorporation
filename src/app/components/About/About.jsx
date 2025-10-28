@@ -1,13 +1,29 @@
 import React from "react";
 import "./About.css";
+import Head from "next/head";
 const About = () => {
   return (
+    <>
+    <Head>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/about_bg.png"
+          fetchpriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/images/spice_image.png"
+          fetchpriority="high"
+        />
+      </Head>
     <div className="About">
-          <div className="About-section">
-          <h1>About Us</h1>
-      <div className="About-content">
-        <div className="About-text">
-          <div className="About-paragraph-container">
+      <div className="About-section">
+        <h1>About Us</h1>
+        <div className="About-content">
+          <div className="About-text">
+            <div className="About-paragraph-container">
               <p className="About-para">
                 Founded in 2011, Durga Corporation has spent over 14 years
                 nurturing lasting relationships with customers across the globe.
@@ -20,24 +36,25 @@ const About = () => {
                 of turmeric, our carefully selected spices are packed with
                 freshness, aroma, and flavor.
               </p>
-              <p className="About-para" >
+              <p className="About-para">
                 Our strong reputation is built on trust, consistency, and an
                 unwavering commitment to excellence. By combining modern
                 technology with traditional values, we ensure that every product
                 we deliver meets the highest standards of quality and freshness.
               </p>
+            </div>
+          </div>
+          <div className="About-image-container">
+            <img
+              src="/images/spice_image.png"
+              alt="About Us Image"
+              className="About-image"
+            />
           </div>
         </div>
-        <div className="About-image-container">
-        <img
-          src="/images/spice_image.png"
-          alt="About Us Image"
-          className="About-image"
-          />
-          </div>
-      </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -1,16 +1,17 @@
-'use client'
+"use client";
 import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
 import { useRouter } from "next/navigation";
+import Head from "next/head";
 
 const DurgaCorporation = ({ isButtonVisible = false }) => {
   const router = useRouter();
-  const [bgImage, setBgImage] = useState('/images/About_hero_section.jpg');
+  const [bgImage, setBgImage] = useState("/images/About_hero_section.jpg");
 
   const images = [
-    '/images/About_hero_section.jpg',
-    '/images/product_hero_section.jpg',
-    '/images/hero_section_bg.jpg'
+    "/images/About_hero_section.jpg",
+    "/images/product_hero_section.jpg",
+    "/images/hero_section_bg.jpg",
   ];
 
   useEffect(() => {
@@ -26,23 +27,31 @@ const DurgaCorporation = ({ isButtonVisible = false }) => {
 
   return (
     <>
-      <div 
+      <Head>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/About_hero_section.jpg"
+          fetchpriority="high"
+        />
+      </Head>
+      <div
         className="container"
         style={{ backgroundImage: `url('${bgImage}')` }}
       >
         <div className="content">
           <h1 className="main-title">Welcome To Durga Corporation</h1>
           <p className="description">
-            Durga Corporation is a manufacturer and
-            exporter of spices and herbs from Patan (NG),
-            India. Tapping into Patan, just 30km from
-            Unjha, which is renowned as Asia's biggest
-            spice market
+            Durga Corporation is a manufacturer and exporter of spices and herbs
+            from Patan (NG), India. Tapping into Patan, just 30km from Unjha,
+            which is renowned as Asia's biggest spice market
           </p>
           <button
             className="know-more-btn"
-            style={{ visibility: isButtonVisible === false ? "hidden" : "visible" }}
-            onClick={() => router.push('/about-us')}
+            style={{
+              visibility: isButtonVisible === false ? "hidden" : "visible",
+            }}
+            onClick={() => router.push("/about-us")}
           >
             Know More
           </button>

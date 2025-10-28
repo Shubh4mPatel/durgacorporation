@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import "./AboutHeroSection.css";
 import { useRouter } from "next/navigation";
+import Head from "next/head";
 
 const DurgaCorporation = ({ isButtonVisible = false }) => {
   const router = useRouter();
@@ -26,6 +27,14 @@ const DurgaCorporation = ({ isButtonVisible = false }) => {
 
   return (
     <>
+    <Head>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/About_hero_section.jpg"
+          fetchpriority="high"
+        />
+      </Head>
       <div 
         className="about-container"
         style={{ backgroundImage: `url('${bgImage}')` }}

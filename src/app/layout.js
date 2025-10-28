@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import ContactUs from "./components/contact-us/ContactUs";
+import Head from "next/head";
 export const metadata = {
   title: 'Durga Corporation',
   icons: {
@@ -25,7 +26,17 @@ const geistMono = Geist_Mono({
 
 export default function RootLayout({ children }) {
   return (
+    <>
+     <Head>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/footer.gif"
+          fetchpriority="high"
+        />
+      </Head>
     <html lang="en">
+      
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
       <div className="app-container">
           <Header />
@@ -37,5 +48,6 @@ export default function RootLayout({ children }) {
         </div>
       </body>
     </html>
+    </>
   );
 }
