@@ -14,7 +14,6 @@ const ProductsSection = () => {
     const handleClick = () => {
       router.push(`/products/${id}`);
     };
-
     return (
       <div className="product-card">
         <img src={image} alt={title} />
