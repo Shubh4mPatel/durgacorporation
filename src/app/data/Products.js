@@ -63,7 +63,7 @@ const products = [
     id: 8,
     name: "TURMERIC FINGER",
     botanicalName: "Curcuma longa",
-    image: "/images/turmeric-finger.jpg",
+    image: "/images/turmeric-fingers.jpg",
     category: "Spices",
     uses: "Whole dried turmeric root used in traditional preparations and ground for powder. Curcumin provides color and is studied for antioxidant and anti-inflammatory activity.",
   },
@@ -280,7 +280,7 @@ const products = [
     name: "NUTMEG",
     botanicalName: "Myristica fragrans",
     image: "/images/Nutme.jpg",
-    category: "Spices",
+    category: "Others",
     uses: "Sweet-warm spice for desserts, kheers, sauces, and garam masala. Potent; used sparingly for flavor.",
   },
   {
@@ -288,7 +288,7 @@ const products = [
     name: "CHILLI FLAKES",
     botanicalName: "Capsicum annuum",
     image: "/images/CHILLI FLAKES.jpg",
-    category: "Spices",
+    category: "Others",
     uses: "Adds heat and color to pizzas, pastas, stir-fries, and marinades. Capsaicin is linked with metabolic and topical analgesic effects.",
   },
   {
@@ -296,7 +296,7 @@ const products = [
     name: "CURRY POWDER",
     botanicalName: "Mixed spice blend",
     image: "/images/CURRY POWDER.jpg",
-    category: "Spices",
+    category: "Others",
     uses: "Blend (often turmeric-forward) used for curries, soups, and marinades. Offers color, aroma, and warmth.",
   },
   {
@@ -304,7 +304,7 @@ const products = [
     name: "GARLIC POWDER",
     botanicalName: "Allium sativum",
     image: "/images/GARLIC POWDER.jpg",
-    category: "Spices",
+    category: "Others",
     uses: "Convenient savory seasoning for rubs, sauces, and snacks. Traditionally associated with cardio-metabolic support and antimicrobial properties.",
   },
   {
@@ -312,7 +312,7 @@ const products = [
     name: "BLACK PAPER POWDER",
     botanicalName: "Piper nigrum",
     image: "/images/Blackpaperpowde.jpg",
-    category: "Spices",
+    category: "Others",
     uses: "Ground form of black pepper used in rubs, marinades, sauces, and table seasoning. Offers pungency and a warm finish; traditionally linked to digestive benefits.",
   },
   {
@@ -320,7 +320,7 @@ const products = [
     name: "CHILLI SEEDS",
     botanicalName: "Capsicum annuum",
     image: "/images/chilliseeds.jpg",
-    category: "Spices",
+    category: "Others",
     uses: "Used to add heat and texture to pickles, spice blends, and chili oils. Rich in capsaicinoids that provide pungency.",
   },
   {
@@ -328,7 +328,7 @@ const products = [
     name: "GARAM MASALA",
     botanicalName: "Mixed spice blend",
     image: "/images/Garammasal.jpg",
-    category: "Spices",
+    category: "Others",
     uses: "Aromatic finishing blend used to add warmth and complexity to Indian dishes.",
   },
   {
@@ -336,7 +336,7 @@ const products = [
     name: "BALYEA",
     botanicalName: "Laurus nobilis",
     image: "/images/Baylea.jpg",
-    category: "Spices",
+    category: "Others",
     uses: "Bay leaf adds a subtle herbal aroma to soups, stews, biryanis, and sauces. Typically used whole and removed before serving. Traditionally associated with digestive support.",
   },
   {
@@ -344,7 +344,7 @@ const products = [
     name: "SAMBHAR MASALA",
     botanicalName: "Mixed spice blend",
     image: "/images/Sambharmasal.jpg",
-    category: "Spices",
+    category: "Others",
     uses: "South Indian spice blend for lentil-based sambar; adds tangy, toasty, and spicy notes.",
   },
   {
@@ -360,7 +360,7 @@ const products = [
     name: "DEHYDRATED ONION",
     botanicalName: "Allium cepa",
     image: "/images/DehydratedOnio.jpg",
-    category: "Spices",
+    category: "Others",
     uses: "Dehydrated onion for soups, gravies, snacks, and spice mixes; easy storage and handling.",
   },
   {
@@ -368,7 +368,7 @@ const products = [
     name: "DEHYDRATED GARLIC",
     botanicalName: "Allium sativum",
     image: "/images/dehydrated-Garlic.jpg",
-    category: "Spices",
+    category: "Others",
     uses: "Convenient garlic for processing, instant mixes, and seasonings; long shelf life.",
   },
 
