@@ -3,8 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 import { useRouter } from "next/navigation";
-
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';

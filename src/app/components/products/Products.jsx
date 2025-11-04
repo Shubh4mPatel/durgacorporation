@@ -34,227 +34,660 @@ const ProductsSection = () => {
       </div>
     );
   };
+  // const products = [
+  //   // Spices
+  //   {
+  //     id: 1,
+  //     title: "Black Pepper",
+  //     category: "Spices",
+  //     image: "/images/Black Pepper.jpg"
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Caasia",
+  //     category: "Spices",
+  //     image: "/images/Caasia.jpg"
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Chilli Flakes",
+  //     category: "Spices",
+  //     image: "/images/CHILLI FLAKES.jpg"
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Cloves",
+  //     category: "Spices",
+  //     image: "/images/Clove.jpg"
+  //   },
+  //   {
+  //     id: 6,
+  //     title: "Coriander Powder",
+  //     category: "Spices",
+  //     image: "/images/CORIANDER POWDER.jpg"
+  //   },
+  //   {
+  //     id: 8,
+  //     title: "Cumin Powder",
+  //     category: "Spices",
+  //     image: "/images/CUMIN POWDER.jpg"
+  //   },
+  //   {
+  //     id: 9,
+  //     title: "Curry Powder",
+  //     category: "Spices",
+  //     image: "/images/CURRY POWDER.jpg"
+  //   },
+  //   {
+  //     id: 10,
+  //     title: "Garlic Powder",
+  //     category: "Spices",
+  //     image: "/images/GARLIC POWDER.jpg"
+  //   },
+  //   {
+  //     id: 12,
+  //     title: "Onion Powder",
+  //     category: "Spices",
+  //     image: "/images/ONION POWDER.jpg"
+  //   },
+  //   {
+  //     id: 13,
+  //     title: "Red Chili Powder",
+  //     category: "Spices",
+  //     image: "/images/RED CHILI POWDER.jpg"
+  //   },
+  //   {
+  //     id: 14,
+  //     title: "Turmeric Powder",
+  //     category: "Spices",
+  //     image: "/images/TURMERIC POWDER.jpg"
+  //   },
+  //   {
+  //     id: 36,
+  //     title: "Whole Red Chillies",
+  //     category: "Spices",
+  //     image: "/images/Whole Red Chillies.jpg"
+  //   },
+  //   // Oil Seeds
+  //   {
+  //     id: 3,
+  //     title: "Black Cumin Seeds",
+  //     category: "Oil Seeds",
+  //     image: "/images/BLACK CUMIN SEEDS.jpg"
+  //   },
+  //   {
+  //     id: 7,
+  //     title: "Ragi Seeds",
+  //     category: "Oil Seeds",
+  //     image: "/images/RAAGI SEEDS.jpg"
+  //   },
+  //   {
+  //     id: 11,
+  //     title: "Niger Seeds",
+  //     category: "Oil Seeds",
+  //     image: "/images/NIGER SEEDS.jpg"
+  //   },
+  //   {
+  //     id: 15,
+  //     title: "Flax Seeds",
+  //     category: "Oil Seeds",
+  //     image: "/images/FLAX SEEDS.jpg"
+  //   },
+  //   {
+  //     id: 16,
+  //     title: "Black Mustard Seeds",
+  //     category: "Oil Seeds",
+  //     image: "/images/BLACK MUSTARD SEEDS.jpg"
+  //   },
+  //   {
+  //     id: 17,
+  //     title: "Sesame Seeds Hulled",
+  //     category: "Oil Seeds",
+  //     image: "/images/SESAME SEEDS HULLED.jpg"
+  //   },
+  //   {
+  //     id: 18,
+  //     title: "Sesame Seeds Natural",
+  //     category: "Oil Seeds",
+  //     image: "/images/SESAME SEEDS NATURAL.jpg"
+  //   },
+  //   {
+  //     id: 19,
+  //     title: "Yellow Mustard Seeds",
+  //     category: "Oil Seeds",
+  //     image: "/images/Yellow Mustard Seeds.jpg"
+  //   },
+  //   {
+  //     id: 26,
+  //     title: "Cumin Seeds",
+  //     category: "Oil Seeds",
+  //     image: "/images/Cumin Seed.jpg"
+  //   },
+  //   {
+  //     id: 27,
+  //     title: "Coriander Seeds",
+  //     category: "Oil Seeds",
+  //     image: "/images/Coriandrum Sativum.jpg"
+  //   },
+  //   {
+  //     id: 28,
+  //     title: "Fennel Seeds",
+  //     category: "Oil Seeds",
+  //     image: "/images/Fennel Seeds.jpg"
+  //   },
+  //   {
+  //     id: 29,
+  //     title: "Ground Nut Seeds",
+  //     category: "Oil Seeds",
+  //     image: "/images/ground nut seeds.jpg"
+  //   },
+  //   {
+  //     id: 30,
+  //     title: "Blanched Groundnuts",
+  //     category: "Oil Seeds",
+  //     image: "/images/Blanched Groundnuts.jpg"
+  //   },
+  //   {
+  //     id: 31,
+  //     title: "Carom Seeds",
+  //     category: "Oil Seeds",
+  //     image: "/images/Carom Seeds.jpg"
+  //   },
+  //   {
+  //     id: 32,
+  //     title: "Dill Seeds",
+  //     category: "Oil Seeds",
+  //     image: "/images/Dill Seeds.jpg"
+  //   },
+    
+  //   // Others
+  //   {
+  //     id: 20,
+  //     title: "Psyllium Husk",
+  //     category: "Others",
+  //     image: "/images/Psyllium Husk.jpg"
+  //   },
+  //   {
+  //     id: 21,
+  //     title: "Millet",
+  //     category: "Others",
+  //     image: "/images/Millet.jpg"
+  //   },
+  //   {
+  //     id: 22,
+  //     title: "Maize Starch",
+  //     category: "Others",
+  //     image: "/images/Maize Starch.jpg"
+  //   },
+  //   {
+  //     id: 23,
+  //     title: "Dry Coconut",
+  //     category: "Others",
+  //     image: "/images/Dry Coconut.jpg"
+  //   },
+  //   {
+  //     id: 24,
+  //     title: "Chickpeas",
+  //     category: "Others",
+  //     image: "/images/Chickpeas.jpg"
+  //   },
+  //   {
+  //     id: 25,
+  //     title: "Brown Chickpeas",
+  //     category: "Others",
+  //     image: "/images/Brown Chickpeas.jpg"
+  //   },
+  //   {
+  //     id: 33,
+  //     title: "Garlic Flakes",
+  //     category: "Others",
+  //     image: "/images/Garlic Flakes.jpg"
+  //   },
+  //   {
+  //     id: 34,
+  //     title: "Onion Flakes",
+  //     category: "Others",
+  //     image: "/images/Onion Flakes.jpg"
+  //   },
+  //   {
+  //     id: 35,
+  //     title: "Quinoa",
+  //     category: "Others",
+  //     image: "/images/Quinoa Seeds.jpg"
+  //   }
+  // ];
   const products = [
-    // Spices
+    // =====================
+    // SPICES - WHOLE SPICES (as per image)
+    // =====================
     {
       id: 1,
-      title: "Black Pepper",
+      name: "CUMIN SEEDS",
+      botanicalName: "Cuminum cyminum",
+      image: "/images/Cumin Seed.jpg",
       category: "Spices",
-      image: "/images/Black Pepper.jpg"
+      uses: "Earthy, warm seeds used whole for tempering or ground in blends like garam masala. Traditionally used for digestion and as a carminative.",
     },
     {
       id: 2,
-      title: "Caasia",
+      name: "FENNEL SEEDS",
+      botanicalName: "Foeniculum vulgare",
+      image: "/images/Fennel Seeds.jpg",
       category: "Spices",
-      image: "/images/Caasia.jpg"
+      uses: "Sweet-aniseed seeds for pickles, masalas, sausages, and as a mouth freshener. Traditionally used for bloating and after-meal digestion.",
+    },
+    {
+      id: 3,
+      name: "CORIANDER SEEDS",
+      botanicalName: "Coriandrum sativum",
+      image: "/images/Coriandrum Sativum.jpg",
+      category: "Spices",
+      uses: "Citrusy-warm seeds for pickles, curries, and spice blends. Traditionally associated with digestive comfort and glycemic support.",
     },
     {
       id: 4,
-      title: "Chilli Flakes",
+      name: "FENUGREEK SEEDS",
+      botanicalName: "Trigonella foenum-graecum",
+      image: "/images/fenugreek seeds.jpg",
       category: "Spices",
-      image: "/images/CHILLI FLAKES.jpg"
+      uses: "Bitter-sweet seeds used in curries, pickles, and spice blends. Traditionally used for digestive health and glycemic support.",
     },
     {
       id: 5,
-      title: "Cloves",
+      name: "DILL SEEDS",
+      botanicalName: "Anethum graveolens",
+      image: "/images/Dill Seeds.jpg",
       category: "Spices",
-      image: "/images/Clove.jpg"
+      uses: "Aromatic seeds used in pickling, breads, and spice blends. Traditionally associated with digestive support.",
     },
     {
       id: 6,
-      title: "Coriander Powder",
+      name: "CAROM SEEDS",
+      botanicalName: "Trachyspermum ammi",
+      image: "/images/Carom Seeds.jpg",
       category: "Spices",
-      image: "/images/CORIANDER POWDER.jpg"
-    },
-    {
-      id: 8,
-      title: "Cumin Powder",
-      category: "Spices",
-      image: "/images/CUMIN POWDER.jpg"
-    },
-    {
-      id: 9,
-      title: "Curry Powder",
-      category: "Spices",
-      image: "/images/CURRY POWDER.jpg"
-    },
-    {
-      id: 10,
-      title: "Garlic Powder",
-      category: "Spices",
-      image: "/images/GARLIC POWDER.jpg"
-    },
-    {
-      id: 12,
-      title: "Onion Powder",
-      category: "Spices",
-      image: "/images/ONION POWDER.jpg"
-    },
-    {
-      id: 13,
-      title: "Red Chili Powder",
-      category: "Spices",
-      image: "/images/RED CHILI POWDER.jpg"
-    },
-    {
-      id: 14,
-      title: "Turmeric Powder",
-      category: "Spices",
-      image: "/images/TURMERIC POWDER.jpg"
-    },
-    {
-      id: 36,
-      title: "Whole Red Chillies",
-      category: "Spices",
-      image: "/images/Whole Red Chillies.jpg"
-    },
-    // Oil Seeds
-    {
-      id: 3,
-      title: "Black Cumin Seeds",
-      category: "Oil Seeds",
-      image: "/images/BLACK CUMIN SEEDS.jpg"
+      uses: "Ajwain is intensely aromatic; used in parathas, fritters, lentils, and pickles. Traditionally taken for indigestion, bloating, and as a carminative.",
     },
     {
       id: 7,
-      title: "Ragi Seeds",
-      category: "Oil Seeds",
-      image: "/images/RAAGI SEEDS.jpg"
+      name: "WHOLE RED CHILLIES",
+      botanicalName: "Capsicum annuum",
+      image: "/images/Whole Red Chillies.jpg",
+      category: "Spices",
+      uses: "Used whole for tempering, pickling, and sauces; can be ground into flakes or powder.",
+    },
+    {
+      id: 8,
+      name: "TURMERIC FINGER",
+      botanicalName: "Curcuma longa",
+      image: "/images/turmeric-finger.jpg",
+      category: "Spices",
+      uses: "Whole dried turmeric root used in traditional preparations and ground for powder. Curcumin provides color and is studied for antioxidant and anti-inflammatory activity.",
+    },
+    {
+      id: 9,
+      name: "DRY GINGER",
+      botanicalName: "Zingiber officinale",
+      image: "/images/Dry ginger.jpg",
+      category: "Spices",
+      uses: "Dried ginger slices/pieces used in masalas, chai, and pickles. Warming spice traditionally used for digestion and respiratory comfort.",
+    },
+    {
+      id: 10,
+      name: "BLACK PEPPER",
+      botanicalName: "Piper nigrum",
+      image: "/images/Black Pepper.jpg",
+      category: "Spices",
+      uses: "Universal savory seasoning that enhances flavor via piperine. Traditionally used to support digestion and increase bioavailability of nutrients like curcumin.",
     },
     {
       id: 11,
-      title: "Niger Seeds",
-      category: "Oil Seeds",
-      image: "/images/NIGER SEEDS.jpg"
+      name: "CARDAMOM",
+      botanicalName: "Elettaria cardamomum",
+      image: "/images/Cardamo.jpg",
+      category: "Spices",
+      uses: "Sweet, floral spice for desserts, chai, biryani, and spice blends. Traditionally used to freshen breath and aid digestion.",
+    },
+    {
+      id: 12,
+      name: "CLOVES",
+      botanicalName: "Syzygium aromaticum",
+      image: "/images/Clove.jpg",
+      category: "Spices",
+      uses: "Strongly aromatic; used in masalas, pilafs, desserts, and beverages. Traditionally used for dental discomfort and as a digestive aid.",
+    },
+  
+    // =====================
+    // SPICES - GROUND SPICES (as per image)
+    // =====================
+    {
+      id: 13,
+      name: "CUMIN POWDER",
+      botanicalName: "Cuminum cyminum",
+      image: "/images/CUMIN POWDER.jpg",
+      category: "Spices",
+      uses: "Adds depth to curries, chili, stews, and marinades. Often paired with coriander; traditionally used to support digestion.",
+    },
+    {
+      id: 14,
+      name: "RED CHILI POWDER",
+      botanicalName: "Capsicum annuum",
+      image: "/images/RED CHILI POWDER.jpg",
+      category: "Spices",
+      uses: "Provides heat and vibrant color to curries, chutneys, and spice blends. Capsaicin linked to metabolic and topical analgesic effects.",
     },
     {
       id: 15,
-      title: "Flax Seeds",
-      category: "Oil Seeds",
-      image: "/images/FLAX SEEDS.jpg"
+      name: "CORIANDER POWDER",
+      botanicalName: "Coriandrum sativum",
+      image: "/images/CORIANDER POWDER.jpg",
+      category: "Spices",
+      uses: "Ground coriander lends citrusy warmth to curries, soups, and rubs. Traditionally linked to digestive and anti-inflammatory benefits.",
     },
     {
       id: 16,
-      title: "Black Mustard Seeds",
-      category: "Oil Seeds",
-      image: "/images/BLACK MUSTARD SEEDS.jpg"
+      name: "MANGO POWDER",
+      botanicalName: "Mangifera indica",
+      image: "/images/MangopowdeR.jpg",
+      category: "Spices",
+      uses: "Amchur adds tang to chaats, chutneys, and curries; made from dried unripe mango.",
     },
     {
       id: 17,
-      title: "Sesame Seeds Hulled",
-      category: "Oil Seeds",
-      image: "/images/SESAME SEEDS HULLED.jpg"
+      name: "TURMERIC POWDER",
+      botanicalName: "Curcuma longa",
+      image: "/images/TURMERIC POWDER.jpg",
+      category: "Spices",
+      uses: "Golden spice for curries, rice, and marinades. Curcumin provides color and is studied for antioxidant and anti-inflammatory activity.",
     },
     {
       id: 18,
-      title: "Sesame Seeds Natural",
-      category: "Oil Seeds",
-      image: "/images/SESAME SEEDS NATURAL.jpg"
+      name: "DRY GINGER POWDER",
+      botanicalName: "Zingiber officinale",
+      image: "/images/Drygingerpowde.jpg",
+      category: "Spices",
+      uses: "Ground dried ginger for baking, chai, spice mixes, and savory dishes. Traditionally used for nausea relief and digestive comfort.",
     },
+  
+    // =====================
+    // OIL SEEDS (as per image)
+    // =====================
     {
       id: 19,
-      title: "Yellow Mustard Seeds",
+      name: "GROUND NUT SEEDS",
+      botanicalName: "Arachis hypogaea",
+      image: "/images/ground nut seeds.jpg",
       category: "Oil Seeds",
-      image: "/images/Yellow Mustard Seeds.jpg"
+      uses: "Peanuts for snacking and oil extraction; widely used in confectionery and savory dishes.",
     },
-    {
-      id: 26,
-      title: "Cumin Seeds",
-      category: "Oil Seeds",
-      image: "/images/Cumin Seed.jpg"
-    },
-    {
-      id: 27,
-      title: "Coriander Seeds",
-      category: "Oil Seeds",
-      image: "/images/Coriandrum Sativum.jpg"
-    },
-    {
-      id: 28,
-      title: "Fennel Seeds",
-      category: "Oil Seeds",
-      image: "/images/Fennel Seeds.jpg"
-    },
-    {
-      id: 29,
-      title: "Ground Nut Seeds",
-      category: "Oil Seeds",
-      image: "/images/ground nut seeds.jpg"
-    },
-    {
-      id: 30,
-      title: "Blanched Groundnuts",
-      category: "Oil Seeds",
-      image: "/images/Blanched Groundnuts.jpg"
-    },
-    {
-      id: 31,
-      title: "Carom Seeds",
-      category: "Oil Seeds",
-      image: "/images/Carom Seeds.jpg"
-    },
-    {
-      id: 32,
-      title: "Dill Seeds",
-      category: "Oil Seeds",
-      image: "/images/Dill Seeds.jpg"
-    },
-    
-    // Others
     {
       id: 20,
-      title: "Psyllium Husk",
-      category: "Others",
-      image: "/images/Psyllium Husk.jpg"
+      name: "BLACK MUSTARD SEEDS",
+      botanicalName: "Brassica nigra",
+      image: "/images/BLACK MUSTARD SEEDS.jpg",
+      category: "Oil Seeds",
+      uses: "Pungent seeds used for tempering and in pickles; also pressed for mustard oil in some cuisines.",
     },
     {
       id: 21,
-      title: "Millet",
-      category: "Others",
-      image: "/images/Millet.jpg"
+      name: "YELLOW MUSTARD SEEDS",
+      botanicalName: "Sinapis alba",
+      image: "/images/Yellow Mustard Seeds.jpg",
+      category: "Oil Seeds",
+      uses: "Milder mustard seed for condiments, pickling, and dressings; also used for oil.",
     },
     {
       id: 22,
-      title: "Maize Starch",
-      category: "Others",
-      image: "/images/Maize Starch.jpg"
+      name: "SESAME SEEDS NATURAL",
+      botanicalName: "Sesamum indicum",
+      image: "/images/SESAME SEEDS NATURAL.jpg",
+      category: "Oil Seeds",
+      uses: "Whole (unhulled) seeds with higher fiber and calcium; used in baking, stir-fries, and oil pressing.",
     },
     {
       id: 23,
-      title: "Dry Coconut",
-      category: "Others",
-      image: "/images/Dry Coconut.jpg"
+      name: "SESAME SEEDS HULLED",
+      botanicalName: "Sesamum indicum",
+      image: "/images/SESAME SEEDS HULLED.jpg",
+      category: "Oil Seeds",
+      uses: "De-hulled seeds for bakery, tahini, and toppings; good source of healthy fats and minerals.",
     },
     {
       id: 24,
-      title: "Chickpeas",
-      category: "Others",
-      image: "/images/Chickpeas.jpg"
+      name: "BLACK SESAME SEEDS",
+      botanicalName: "Sesamum indicum",
+      image: "/images/blacksesameseeds.jpg",
+      category: "Oil Seeds",
+      uses: "Nutty seeds used in confectionery, toppings, and oil extraction; rich in calcium and antioxidants.",
     },
     {
       id: 25,
-      title: "Brown Chickpeas",
-      category: "Others",
-      image: "/images/Brown Chickpeas.jpg"
+      name: "FLAX SEEDS",
+      botanicalName: "Linum usitatissimum",
+      image: "/images/FLAX SEEDS.jpg",
+      category: "Oil Seeds",
+      uses: "Rich in ALA omega-3; used whole, ground, or as oil in baking, cereals, and smoothies.",
     },
     {
-      id: 33,
-      title: "Garlic Flakes",
+      id: 26,
+      name: "BLACK CUMIN SEEDS",
+      botanicalName: "Nigella sativa",
+      image: "/images/BLACK CUMIN SEEDS.jpg",
+      category: "Oil Seeds",
+      uses: "Aromatic seeds for breads, curries, and pickles; also valued as an oilseed in traditional systems.",
+    },
+  
+    // =====================
+    // OTHERS - PULSES, GRAINS & OTHER PRODUCTS (as per image)
+    // =====================
+    {
+      id: 27,
+      name: "MILLET",
+      botanicalName: "Panicum miliaceum",
+      image: "/images/Millet.jpg",
       category: "Others",
-      image: "/images/Garlic Flakes.jpg"
+      uses: "Gluten-free ancient grain for porridges, rotis, salads, and fermented foods; nutrient-dense.",
+    },
+    {
+      id: 28,
+      name: "CHICKPEAS",
+      botanicalName: "Cicer arietinum",
+      image: "/images/Chickpeas.jpg",
+      category: "Others",
+      uses: "Versatile legumes for hummus, falafel, curries, and roasting; high in protein and fiber.",
+    },
+    {
+      id: 29,
+      name: "BROWN CHICKPEAS",
+      botanicalName: "Cicer arietinum",
+      image: "/images/Brown Chickpeas.jpg",
+      category: "Others",
+      uses: "Nutty legumes for curries, salads, and snacks; rich in plant protein and fiber.",
+    },
+    {
+      id: 30,
+      name: "PSYLLIUM HUSK",
+      botanicalName: "Plantago ovata",
+      image: "/images/Psyllium Husk.jpg",
+      category: "Others",
+      uses: "Soluble fiber for digestive regularity; used in gluten-free baking as a binder.",
+    },
+    {
+      id: 31,
+      name: "MAIZE STARCH",
+      botanicalName: "Zea mays",
+      image: "/images/Maize Starch.jpg",
+      category: "Others",
+      uses: "Neutral thickener for soups, sauces, desserts, and coatings; also used in industry.",
+    },
+    {
+      id: 32,
+      name: "DRY COCONUT",
+      botanicalName: "Cocos nucifera",
+      image: "/images/Dry Coconut.jpg",
+      category: "Others",
+      uses: "Used grated or sliced in curries, sweets, and chutneys; rich in MCT fats and fiber.",
+    },
+  
+    // =====================
+    // SPICES - Additional items from list (right side of image)
+    // =====================
+    {
+      id: 33,
+      name: "NUTMEG",
+      botanicalName: "Myristica fragrans",
+      image: "/images/Nutme.jpg",
+      category: "Spices",
+      uses: "Sweet-warm spice for desserts, kheers, sauces, and garam masala. Potent; used sparingly for flavor.",
     },
     {
       id: 34,
-      title: "Onion Flakes",
-      category: "Others",
-      image: "/images/Onion Flakes.jpg"
+      name: "CHILLI FLAKES",
+      botanicalName: "Capsicum annuum",
+      image: "/images/CHILLI FLAKES.jpg",
+      category: "Spices",
+      uses: "Adds heat and color to pizzas, pastas, stir-fries, and marinades. Capsaicin is linked with metabolic and topical analgesic effects.",
     },
     {
       id: 35,
-      title: "Quinoa",
+      name: "CURRY POWDER",
+      botanicalName: "Mixed spice blend",
+      image: "/images/CURRY POWDER.jpg",
+      category: "Spices",
+      uses: "Blend (often turmeric-forward) used for curries, soups, and marinades. Offers color, aroma, and warmth.",
+    },
+    {
+      id: 36,
+      name: "GARLIC POWDER",
+      botanicalName: "Allium sativum",
+      image: "/images/GARLIC POWDER.jpg",
+      category: "Spices",
+      uses: "Convenient savory seasoning for rubs, sauces, and snacks. Traditionally associated with cardio-metabolic support and antimicrobial properties.",
+    },
+    {
+      id: 37,
+      name: "BLACK PAPER POWDER",
+      botanicalName: "Piper nigrum",
+      image: "/images/Blackpaperpowde.jpg",
+      category: "Spices",
+      uses: "Ground form of black pepper used in rubs, marinades, sauces, and table seasoning. Offers pungency and a warm finish; traditionally linked to digestive benefits.",
+    },
+    {
+      id: 38,
+      name: "CHILLI SEEDS",
+      botanicalName: "Capsicum annuum",
+      image: "/images/chilliseeds.jpg",
+      category: "Spices",
+      uses: "Used to add heat and texture to pickles, spice blends, and chili oils. Rich in capsaicinoids that provide pungency.",
+    },
+    {
+      id: 39,
+      name: "GARAM MASALA",
+      botanicalName: "Mixed spice blend",
+      image: "/images/Garammasal.jpg",
+      category: "Spices",
+      uses: "Aromatic finishing blend used to add warmth and complexity to Indian dishes.",
+    },
+    {
+      id: 40,
+      name: "BALYEA",
+      botanicalName: "Laurus nobilis",
+      image: "/images/Baylea.jpg",
+      category: "Spices",
+      uses: "Bay leaf adds a subtle herbal aroma to soups, stews, biryanis, and sauces. Typically used whole and removed before serving. Traditionally associated with digestive support.",
+    },
+    {
+      id: 41,
+      name: "SAMBHAR MASALA",
+      botanicalName: "Mixed spice blend",
+      image: "/images/Sambharmasal.jpg",
+      category: "Spices",
+      uses: "South Indian spice blend for lentil-based sambar; adds tangy, toasty, and spicy notes.",
+    },
+    {
+      id: 42,
+      name: "CASSIA",
+      botanicalName: "Cinnamomum cassia",
+      image: "/images/Caasia.jpg",
+      category: "Spices",
+      uses: "Warm, sweet spice used in baking, desserts, curries, and beverages. Traditionally associated with glycemic support and anti-inflammatory benefits.",
+    },
+    {
+      id: 43,
+      name: "DEHYDRATED ONION",
+      botanicalName: "Allium cepa",
+      image: "/images/DehydratedOnio.jpg",
+      category: "Spices",
+      uses: "Dehydrated onion for soups, gravies, snacks, and spice mixes; easy storage and handling.",
+    },
+    {
+      id: 44,
+      name: "DEHYDRATED GARLIC",
+      botanicalName: "Allium sativum",
+      image: "/images/dehydrated-Garlic.jpg",
+      category: "Spices",
+      uses: "Convenient garlic for processing, instant mixes, and seasonings; long shelf life.",
+    },
+  
+    // =====================
+    // OTHERS - Additional items
+    // =====================
+    {
+      id: 45,
+      name: "BLANCHED GROUNDNUTS",
+      botanicalName: "Arachis hypogaea",
+      image: "/images/Blanched Groundnuts.jpg",
       category: "Others",
-      image: "/images/Quinoa Seeds.jpg"
-    }
+      uses: "Skinned peanuts for confectionery, peanut butter, and roasting; protein-rich snack and food ingredient.",
+    },
+    {
+      id: 46,
+      name: "NIGER SEEDS",
+      botanicalName: "Guizotia abyssinica",
+      image: "/images/NIGER SEEDS.jpg",
+      category: "Oil Seeds",
+      uses: "Oilseed similar to sunflower; also popular as bird feed. Light, neutral oil.",
+    },
+    {
+      id: 47,
+      name: "QUINOA",
+      botanicalName: "Chenopodium quinoa",
+      image: "/images/Quinoa Seeds.jpg",
+      category: "Others",
+      uses: "Complete-protein pseudo-grain for salads, bowls, and baking; naturally gluten-free.",
+    },
+    {
+      id: 48,
+      name: "RAGI SEEDS",
+      botanicalName: "Eleusine coracana",
+      image: "/images/RAAGI SEEDS.jpg",
+      category: "Others",
+      uses: "Finger millet used for porridges, rotis, and batters; rich in calcium and fiber; gluten-free.",
+    },
+    {
+      id: 49,
+      name: "GARLIC FLAKES",
+      botanicalName: "Allium sativum",
+      image: "/images/Garlic Flakes.jpg",
+      category: "Others",
+      uses: "Dehydrated slices for soups, sauces, pizzas, and seasoning blends; rehydrates quickly.",
+    },
+    {
+      id: 50,
+      name: "ONION POWDER",
+      botanicalName: "Allium cepa",
+      image: "/images/ONION POWDER.jpg",
+      category: "Spices",
+      uses: "Adds onion flavor without moisture; great for rubs, dips, and sauces.",
+    },
+    {
+      id: 51,
+      name: "ONION FLAKES",
+      botanicalName: "Allium cepa",
+      image: "/images/Onion Flakes.jpg",
+      category: "Others",
+      uses: "Dehydrated pieces for soups, casseroles, seasonings, and instant foods.",
+    },
   ];
 
   // Filter products based on active category
@@ -317,7 +750,7 @@ const ProductsSection = () => {
           <ProductCard
             key={product.id}
             id={product.id}
-            title={product.title}
+            title={product.name}
             image={product.image}
             category={product.category}
           />
