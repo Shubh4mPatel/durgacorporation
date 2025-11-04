@@ -99,7 +99,7 @@ const ProductsSection = () => {
       id: 8,
       name: "TURMERIC FINGER",
       botanicalName: "Curcuma longa",
-      image: "/images/turmeric-finger.jpg",
+      image: "/images/turmeric-fingers.jpg",
       category: "Spices",
       uses: "Whole dried turmeric root used in traditional preparations and ground for powder. Curcumin provides color and is studied for antioxidant and anti-inflammatory activity.",
     },
