@@ -167,7 +167,7 @@ const ProductsSection = () => {
       id: 16,
       name: "MANGO POWDER",
       botanicalName: "Mangifera indica",
-      image: "/images/MangopowdeR.jpg",
+      image: "/images/Mangopowder.jpg",
       category: "Spices",
       uses: "Amchur adds tang to chaats, chutneys, and curries; made from dried unripe mango.",
     },
