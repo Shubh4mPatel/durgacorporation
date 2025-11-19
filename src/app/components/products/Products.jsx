@@ -332,7 +332,7 @@ const ProductsSection = () => {
     name: "CURRY POWDER",
     botanicalName: "Mixed spice blend",
     image: "/images/CURRY POWDER.jpg",
-    category: "Others",
+    category: "Powder",
     uses: "Blend (often turmeric-forward) used for curries, soups, and marinades. Offers color, aroma, and warmth.",
   },
   {
