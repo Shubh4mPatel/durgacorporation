@@ -47,7 +47,7 @@ const products = [
     id: 6,
     name: "CAROM SEEDS",
     botanicalName: "Trachyspermum ammi",
-    image: "/images/Carom Seeds.jpg",
+    image: "/images/carom seeds.jpg",
     category: "Spices",
     uses: "Ajwain is intensely aromatic; used in parathas, fritters, lentils, and pickles. Traditionally taken for indigestion, bloating, and as a carminative.",
   },
