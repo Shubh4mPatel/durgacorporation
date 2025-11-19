@@ -108,7 +108,7 @@ const products = [
     name: "CUMIN POWDER",
     botanicalName: "Cuminum cyminum",
     image: "/images/CUMIN POWDER.jpg",
-    category: "Spices",
+    category: "Powder",
     uses: "Adds depth to curries, chili, stews, and marinades. Often paired with coriander; traditionally used to support digestion.",
   },
   {
@@ -116,7 +116,7 @@ const products = [
     name: "RED CHILI POWDER",
     botanicalName: "Capsicum annuum",
     image: "/images/RED CHILI POWDER.jpg",
-    category: "Spices",
+    category: "Powder",
     uses: "Provides heat and vibrant color to curries, chutneys, and spice blends. Capsaicin linked to metabolic and topical analgesic effects.",
   },
   {
@@ -124,7 +124,7 @@ const products = [
     name: "CORIANDER POWDER",
     botanicalName: "Coriandrum sativum",
     image: "/images/CORIANDER POWDER.jpg",
-    category: "Spices",
+    category: "Powder",
     uses: "Ground coriander lends citrusy warmth to curries, soups, and rubs. Traditionally linked to digestive and anti-inflammatory benefits.",
   },
   {
@@ -132,7 +132,7 @@ const products = [
     name: "MANGO POWDER",
     botanicalName: "Mangifera indica",
     image: "/images/Mangopowder.jpg",
-    category: "Spices",
+    category: "Powder",
     uses: "Amchur adds tang to chaats, chutneys, and curries; made from dried unripe mango.",
   },
   {
@@ -140,7 +140,7 @@ const products = [
     name: "TURMERIC POWDER",
     botanicalName: "Curcuma longa",
     image: "/images/TURMERIC POWDER.jpg",
-    category: "Spices",
+    category: "Powder",
     uses: "Golden spice for curries, rice, and marinades. Curcumin provides color and is studied for antioxidant and anti-inflammatory activity.",
   },
   {
@@ -148,7 +148,7 @@ const products = [
     name: "DRY GINGER POWDER",
     botanicalName: "Zingiber officinale",
     image: "/images/Drygingerpowde.jpg",
-    category: "Spices",
+    category: "Powder",
     uses: "Ground dried ginger for baking, chai, spice mixes, and savory dishes. Traditionally used for nausea relief and digestive comfort.",
   },
 
@@ -280,7 +280,7 @@ const products = [
     name: "NUTMEG",
     botanicalName: "Myristica fragrans",
     image: "/images/Nutme.jpg",
-    category: "Others",
+    category: "Spices",
     uses: "Sweet-warm spice for desserts, kheers, sauces, and garam masala. Potent; used sparingly for flavor.",
   },
   {
@@ -304,7 +304,7 @@ const products = [
     name: "GARLIC POWDER",
     botanicalName: "Allium sativum",
     image: "/images/GARLIC POWDER.jpg",
-    category: "Others",
+    category: "Powder",
     uses: "Convenient savory seasoning for rubs, sauces, and snacks. Traditionally associated with cardio-metabolic support and antimicrobial properties.",
   },
   {
@@ -312,7 +312,7 @@ const products = [
     name: "BLACK PAPER POWDER",
     botanicalName: "Piper nigrum",
     image: "/images/Blackpaperpowde.jpg",
-    category: "Others",
+    category: "Powder",
     uses: "Ground form of black pepper used in rubs, marinades, sauces, and table seasoning. Offers pungency and a warm finish; traditionally linked to digestive benefits.",
   },
   {
@@ -333,7 +333,7 @@ const products = [
   },
   {
     id: 40,
-    name: "BALYEA",
+    name: "BAY LEAVES",
     botanicalName: "Laurus nobilis",
     image: "/images/Baylea.jpg",
     category: "Others",
@@ -411,7 +411,7 @@ const products = [
     id: 49,
     name: "GARLIC FLAKES",
     botanicalName: "Allium sativum",
-    image: "/images/Garlic Flakes.jpg",
+    image: "/images/dehydrated-Garlic.jpg",
     category: "Others",
     uses: "Dehydrated slices for soups, sauces, pizzas, and seasoning blends; rehydrates quickly.",
   },
@@ -420,7 +420,7 @@ const products = [
     name: "ONION POWDER",
     botanicalName: "Allium cepa",
     image: "/images/ONION POWDER.jpg",
-    category: "Spices",
+    category: "Powder",
     uses: "Adds onion flavor without moisture; great for rubs, dips, and sauces.",
   },
   {
