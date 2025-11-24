@@ -109,7 +109,7 @@ const products = [
     id: 33,
     title: "Garlic Flakes",
     category: "Others",
-    image: "/images/Garlic Flakes.jpg"
+    image: "/images/dehydrated-Garlic.jpg"
   }
 ];
 
