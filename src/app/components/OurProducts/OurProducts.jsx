@@ -40,7 +40,7 @@ const products = [
     id: 31,
     title: "Carom Seeds",
     category: "Oil Seeds",
-    image: "/images/carom seeds.jpg"
+    image: "/images/Carom Seeds.jpg"
   },
   {
     id: 34,
