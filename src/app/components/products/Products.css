@@ -445,13 +445,13 @@
   }
 
   .product-card {
-    max-width: 100%;
-    height: auto;
+     max-width: 185px;
+
   }
 
   .product-card img {
-    width: 100px;
-    height: 100px;
+    width: 135px;
+    height: 135px;
     top: -8%;
   }
 }
